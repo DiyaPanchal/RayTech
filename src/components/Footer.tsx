@@ -5,7 +5,7 @@ import "../css/footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="custom-container">
         <div className="footer-content">
           <div className="footer-brand">
             <img src={logoWithTagline} alt="Ray Tech - Where Innovation Meets Success" className="footer-logo-with-tagline" />

@@ -1,5 +1,5 @@
 import "../css/services.css";
-import { FiCode } from "react-icons/fi";
+import { FaCode } from "react-icons/fa";
 import { BsPalette } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { TbChartLine } from "react-icons/tb";
@@ -8,14 +8,14 @@ import { HiPuzzle } from "react-icons/hi";
 export default function Services() {
   const services = [
     {
-      icon: <FiCode className="service-icon" />,
+      icon: <FaCode className="service-icon" />,
       title: "Website Design & Development",
       items: [
         "Custom Development",
         "Responsive Design",
         "E-commerce Solutions",
-        "CMS Integration"
-      ]
+        "CMS Integration",
+      ],
     },
     {
       icon: <BsPalette className="service-icon" />,
@@ -24,18 +24,13 @@ export default function Services() {
         "Logo & Brand Identity",
         "Print Materials",
         "Social Media Graphics",
-        "Infographics"
-      ]
+        "Infographics",
+      ],
     },
     {
       icon: <BiSearch className="service-icon" />,
       title: "SEO Services",
-      items: [
-        "Website Audit",
-        "On-page SEO",
-        "Technical SEO",
-        "Local SEO"
-      ]
+      items: ["Website Audit", "On-page SEO", "Technical SEO", "Local SEO"],
     },
     {
       icon: <TbChartLine className="service-icon" />,
@@ -44,8 +39,8 @@ export default function Services() {
         "Social Media Marketing",
         "PPC Advertising",
         "Content Marketing",
-        "Email Marketing"
-      ]
+        "Email Marketing",
+      ],
     },
     {
       icon: <HiPuzzle className="service-icon" />,
@@ -54,14 +49,14 @@ export default function Services() {
         "Inventory Management",
         "HRM & Payroll",
         "Accounting & CRM",
-        "Custom Modules"
-      ]
-    }
+        "Custom Modules",
+      ],
+    },
   ];
 
   return (
     <section id="services" className="services-section">
-      <div className="container">
+      <div className="custom-container">
         <h2 className="section-title text-center">Our Services</h2>
         
         <div className="row g-4">

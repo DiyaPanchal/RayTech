@@ -3,7 +3,7 @@ import "../css/calltoaction.css";
 export default function CallToAction() {
   return (
     <section className="cta-section">
-      <div className="container text-center">
+      <div className="custom-container text-center">
         <h2 className="cta-title">Let's Get Started</h2>
         <p className="cta-description">
           From ambition to action – partner with experience that delivers results.

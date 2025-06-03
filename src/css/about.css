@@ -83,13 +83,11 @@
 
 .feature-icon {
   color: #0066ff;
-  font-size: 1.25rem;
   flex-shrink: 0;
 }
 
 .feature-text {
-  font-size: 1.1rem;
-  color: #4a4a4a;
+  color: #4B5563;
 }
 
 @media (max-width: 991px) {

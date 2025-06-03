@@ -1,10 +1,11 @@
-import aboutImage from "/about.jpg";
+import aboutImage from "/about.png";
+import { FaCheckCircle } from "react-icons/fa";
 import "../css/about.css";
 
 export default function About() {
   return (
     <section id="about" className="about-section">
-      <div className="container">
+      <div className="custom-container">
         <div className="row align-items-center g-5">
           <div className="col-lg-6">
             <div className="about-image-wrapper">
@@ -31,10 +32,10 @@ export default function About() {
                 <footer className="blockquote-footer">Bhargav Solanki</footer>
               </blockquote>
 
-              <ul className="list-unstyled">
-                <li>
-                  <span>✓</span>
-                  <span>Focus on creativity, precision, and client success</span>
+              <ul className="list-unstyled feature-list">
+                <li className="feature-item">
+                  <span><FaCheckCircle className="feature-icon"/></span>
+                  <span className="feature-text">Focus on creativity, precision, and client success</span>
                 </li>
               </ul>
             </div>

@@ -3,7 +3,7 @@ import "../css/hero.css";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="container">
+      <div className="custom-container">
         <div className="hero-content">
           <div className="hero-text">
             <h1>Your Gateway to Digital Excellence!</h1>
@@ -18,7 +18,7 @@ export default function Hero() {
           </div>
           <div className="hero-image">
             <img 
-              src="/hero.jpg" 
+              src="/hero.png" 
               alt="Development team working together in modern office" 
             />
           </div>

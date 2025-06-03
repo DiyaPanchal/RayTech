@@ -9,7 +9,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact-section">
-      <div className="container">
+      <div className="custom-container">
         <h2 className="section-title">Contact Us</h2>
         
         <div className="row g-4 justify-content-between">
