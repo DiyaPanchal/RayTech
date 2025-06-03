@@ -1,0 +1,135 @@
+.hero {
+  background: linear-gradient(to bottom, #F0F4FF, #FFFFFF);
+  padding: 6rem 0;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 810px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: #1A1A1A;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #4A5568;
+  margin-bottom: 2.5rem;
+  max-width: 90%;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.btn {
+  padding: 0.875rem 2rem !important;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #2563EB !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  width: auto !important;
+}
+
+.btn-primary:hover {
+  background-color: #1D4ED8 !important;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  color: #2563EB !important;
+  border: 2px solid #2563EB !important;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(37, 99, 235, 0.05) !important;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+  

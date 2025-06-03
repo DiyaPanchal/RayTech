@@ -1,0 +1,48 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  padding: 1rem 2rem !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.navbar-brand span {
+  margin-left: 0.5rem;
+}
+
+.nav-link {
+  color: #4a4a4a;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0066ff;
+}
+
+.navbar-nav {
+  gap: 0.5rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,68 @@
+.why-choose-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.reason-card {
+  padding: 2rem 1rem;
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-5px);
+}
+
+.reason-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.reason-icon {
+  font-size: 2.5rem;
+  color: #0066ff;
+}
+
+.reason-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.reason-description {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .why-choose-section {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reason-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .reason-title {
+    font-size: 1.2rem;
+  }
+
+  .reason-description {
+    font-size: 0.95rem;
+  }
+} 
