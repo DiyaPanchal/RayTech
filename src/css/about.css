@@ -1,73 +1,116 @@
 .about-section {
   padding: 6rem 0;
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, #FFFFFF, #F8FAFF);
   position: relative;
+  overflow: hidden;
+}
+
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
+  transform: rotate(45deg);
+}
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  transform: perspective(1000px) rotateY(5deg);
+  transition: all 0.5s ease;
+}
+
+.about-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), transparent);
+  z-index: 1;
+}
+
+.about-image-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.2);
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image-wrapper:hover img {
+  transform: scale(1.05);
 }
 
 .about-content {
   padding-left: 2rem;
 }
 
-.about-content p{
-  color: #4B5563;
-}
-
-
 .about-title {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: 800;
   margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #1A1A1A, #2563EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
 }
 
-.about-description {
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #2563EB, #1D4ED8);
+  border-radius: 2px;
+}
+
+.about-content p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #4a4a4a;
+  color: #4A5568;
   margin-bottom: 2rem;
 }
 
-.about-section strong {
-  color: #1a1a1a;
-  font-weight: 600;
-}
-
-.about-image-wrapper {
-  position: relative;
-}
-
-.about-section img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
 .quote-container {
-  background-color: #F8F9FA;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(37, 99, 235, 0.02));
+  border-left: 4px solid #2563EB;
+  padding: 1.5rem;
   border-radius: 12px;
-  padding: 1rem;
   margin: 2rem 0;
-  position: relative;
+  transition: all 0.3s ease;
 }
 
-.blockquote {
-  border: none;
+.quote-container:hover {
+  transform: translateX(5px);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(37, 99, 235, 0.04));
 }
 
-.blockquote p {
-  color: #1a1a1a;
+.quote-container p {
+  font-size: 1.25rem;
+  font-weight: 600;
   font-style: italic;
-  margin-bottom: 0.75rem;
+  color: #1A1A1A;
+  margin-bottom: 0.5rem;
 }
 
 .blockquote-footer {
-  color: #666;
-}
-
-.blockquote-footer::before {
-  content: none;
+  color: #4A5568;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .feature-list {
@@ -77,17 +120,34 @@
 .feature-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-  color: #0066ff;
-  flex-shrink: 0;
+  font-size: 1.5rem;
+  color: #2563EB;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .feature-text {
-  color: #4B5563;
+  font-size: 1.1rem;
+  color: #4A5568;
+  font-weight: 500;
 }
 
 @media (max-width: 991px) {
@@ -98,24 +158,40 @@
   .about-content {
     padding-left: 0;
     margin-top: 2rem;
-    text-align: center;
   }
 
   .about-title {
     font-size: 2rem;
   }
+}
 
-  .feature-item {
-    justify-content: center;
+@media (max-width: 576px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
   }
 
   .quote-container {
-    padding: 1.5rem;
-    margin: 1.5rem 0;
+    padding: 1.25rem;
   }
 
-  .blockquote p {
+  .quote-container p {
     font-size: 1.1rem;
+  }
+
+  .feature-item {
+    padding: 0.875rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
   }
 }
   

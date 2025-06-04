@@ -3,6 +3,9 @@ import "../css/hero.css";
 export default function Hero() {
   return (
     <section className="hero">
+      <div className="floating-shape shape-1"></div>
+      <div className="floating-shape shape-2"></div>
+      <div className="floating-shape shape-3"></div>
       <div className="custom-container">
         <div className="hero-content">
           <div className="hero-text">
