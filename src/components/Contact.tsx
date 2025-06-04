@@ -1,10 +1,60 @@
 import { HiMail, HiPhone, HiLocationMarker } from "react-icons/hi";
+import { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import "../css/contact.css";
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    setIsSubmitting(true);
+
+    try {
+      const result = await emailjs.send(
+        "service_2wbl68l",
+        "template_1nhaprd",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: "director.raytech@gmail.com",
+        },
+        "65J5NGce2GRAcC56a"
+      );
+
+      if (result.status === 200) {
+        toast.success("Your message has been sent successfully!", {
+        });
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (error) {
+      toast.error("Oops! Something went wrong. Please try again later.", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -23,6 +73,8 @@ export default function Contact() {
                   className="form-control"
                   placeholder="Your name"
                   required
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </div>
               
@@ -34,6 +86,8 @@ export default function Contact() {
                   className="form-control"
                   placeholder="Your email"
                   required
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
               
@@ -45,11 +99,17 @@ export default function Contact() {
                   rows={4}
                   placeholder="Your message"
                   required
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
               
-              <button type="submit" className="btn btn-primary">
-                Send Message
+              <button 
+                type="submit" 
+                className="btn btn-primary"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
