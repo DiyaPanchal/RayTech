@@ -3,6 +3,7 @@
   color: #fff;
   padding: 5rem 0 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .footer::before {
@@ -30,6 +31,13 @@
   width: 200px;
   height: auto;
   margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1);
+  transition: all 0.5s ease;
+}
+
+.footer-logo-with-tagline:hover {
+  transform: translateY(-5px);
+  filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 .company-description {
@@ -48,6 +56,7 @@
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 0.75rem;
+  display: inline-block;
 }
 
 .footer-links h3::after,
@@ -59,7 +68,15 @@
   left: 0;
   width: 40px;
   height: 2px;
-  background: #2563EB;
+  background: linear-gradient(to right, #2563EB, #1D4ED8);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.footer-links h3:hover::after,
+.footer-contact h3:hover::after,
+.footer-social h3:hover::after {
+  width: 100%;
 }
 
 .footer-links ul,
@@ -76,12 +93,30 @@
 .footer-links ul li a {
   color: #A1A1AA;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 0.95rem;
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.footer-links ul li a::before {
+  content: '›';
+  position: absolute;
+  left: -20px;
+  color: #2563EB;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .footer-links ul li a:hover {
   color: #2563EB;
+  padding-left: 20px;
+}
+
+.footer-links ul li a:hover::before {
+  opacity: 1;
+  left: 0;
 }
 
 .contact-list li {
@@ -89,6 +124,12 @@
   align-items: flex-start;
   margin-bottom: 1.25rem;
   color: #A1A1AA;
+  transition: all 0.3s ease;
+}
+
+.contact-list li:hover {
+  transform: translateX(5px);
+  color: #fff;
 }
 
 .contact-icon {
@@ -96,6 +137,11 @@
   font-size: 1.25rem;
   margin-right: 1rem;
   margin-top: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.contact-list li:hover .contact-icon {
+  transform: scale(1.2);
 }
 
 .contact-list li div p {
@@ -121,11 +167,42 @@
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0.5);
+  border-radius: 50%;
 }
 
 .social-icon:hover {
-  background: #2563EB;
   transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.social-icon:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.social-icon svg {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover svg {
+  transform: scale(1.2);
 }
 
 .company-certifications {
@@ -170,11 +247,27 @@
   color: #A1A1AA;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-bottom-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #2563EB;
+  transition: width 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
   color: #2563EB;
+}
+
+.footer-bottom-links a:hover::after {
+  width: 100%;
 }
 
 .separator {

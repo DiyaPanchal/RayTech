@@ -40,7 +40,7 @@ export default function Footer() {
               <li>
                 <FaPhoneAlt className="contact-icon" />
                 <div>
-                  <p>+91 XXXXX XXXXX</p>
+                  <p>+91 91576 71794</p>
                   <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
                 </div>
               </li>

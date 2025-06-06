@@ -56,42 +56,42 @@ export default function Navbar() {
             </li>
             {location.pathname === "/" && (
               <>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="#about"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    About
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="#services"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="#why-us"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Why Us
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
-                    href="#contact"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Contact
-                  </a>
-                </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#about"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#services"
+                onClick={() => setIsOpen(false)}
+              >
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#why-us"
+                onClick={() => setIsOpen(false)}
+              >
+                Why Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#contact"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </a>
+            </li>
               </>
             )}
           </ul>
