@@ -1,12 +1,20 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { BsCheckCircleFill } from 'react-icons/bs';
 import '../css/pricing.css';
 
 const Pricing = () => {
+  const { serviceType } = useParams();
+  
+  // Convert URL parameter to readable format
+  const formattedServiceType = serviceType
+    ? serviceType.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+    : 'Development';
+
   return (
     <section className="pricing-section">
       <div className="container">
-        <h2 className="section-title text-center">Development Packages</h2>
+        <h2 className="section-title text-center">{formattedServiceType} Packages</h2>
         <p className="section-subtitle">We offer tailored pricing to meet varying business needs:</p>
         
         <div className="row g-4 justify-content-center">

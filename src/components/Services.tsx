@@ -4,12 +4,20 @@ import { BsPalette } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { TbChartLine } from "react-icons/tb";
 import { HiPuzzle } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
+
+  const handleServiceClick = (title: string) => {
+    const serviceUrl = title.toLowerCase().replace(/\s+/g, '-');
+    navigate(`/services/${serviceUrl}`);
+  };
+  
   const services = [
     {
       icon: <FaCode className="service-icon" />,
-      title: "Website Design & Development",
+      title: "Website Design Development",
       items: [
         "Custom Development",
         "Responsive Design",
@@ -62,7 +70,11 @@ export default function Services() {
         <div className="row g-4">
           {services.map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
-              <div className="service-card">
+              <div 
+                className="service-card" 
+                onClick={() => handleServiceClick(service.title)}
+                style={{ cursor: 'pointer' }}
+              >
                 <div className="service-icon-wrapper">
                   {service.icon}
                 </div>

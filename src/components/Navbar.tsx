@@ -45,15 +45,6 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                className={`nav-link ${location.pathname === "/pricing" ? "active" : ""}`}
-                to="/pricing"
-                onClick={() => setIsOpen(false)}
-              >
-                Pricing
-              </Link>
-            </li>
             {location.pathname === "/" && (
               <>
             <li className="nav-item">
