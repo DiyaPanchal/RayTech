@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Home from "./containers/Home";
-import Pricing from "./components/Pricing";
 import Layout from "./components/Layout";
+import ServiceDetails from "./pages/ServiceDetails";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,7 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/services/:serviceType" element={<ServiceDetails />} />
         </Routes>
       <ToastContainer
         position="top-right"

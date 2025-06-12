@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import { BsCheckCircleFill } from 'react-icons/bs';
 import '../css/pricing.css';
