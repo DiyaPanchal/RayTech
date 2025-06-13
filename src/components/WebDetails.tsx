@@ -88,7 +88,7 @@ const WebDetails = () => {
     <div className="web-dev-section">
       <div className="custom-container">
         <div className="section-heading-wrapper">
-          <h1 className="main-title">Web Design & Development</h1>
+          <h1 className="section-title">Web Design & Development</h1>
         </div>
         
         <div className="intro-section">
@@ -116,7 +116,7 @@ const WebDetails = () => {
 
         <div className="benefits-section">
           <div className="section-heading-wrapper">
-            <h2 className="benefits-title">Key Benefits</h2>
+            <h2 className="section-title">Key Benefits</h2>
             <p className="byline">Discover how a professional website can transform your business and drive sustainable growth</p>
           </div>
           <div className="benefits-container">
@@ -133,7 +133,7 @@ const WebDetails = () => {
 
         <div className="technical-section">
           <div className="section-heading-wrapper">
-            <h2 className="tech-section-title">Our Tech Stack</h2>
+            <h2 className="section-title">Our Tech Stack</h2>
             <p className="byline">Powered by cutting-edge technologies and frameworks to deliver robust, scalable solutions</p>
           </div>
           
@@ -160,7 +160,7 @@ const WebDetails = () => {
 
         <div className="web-dev-services-section">
           <div className="section-heading-wrapper">
-            <h2 className="web-dev-services-title">Core Services</h2>
+            <h2 className="section-title">Core Services</h2>
             <p className="byline">Comprehensive web development solutions tailored to your specific needs and industry requirements</p>
           </div>
           <div className="web-dev-services-grid">

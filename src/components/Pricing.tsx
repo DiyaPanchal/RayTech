@@ -18,7 +18,7 @@ const Pricing = ({ packages }: PricingProps) => {
   return (
     <section className="pricing-section">
       <div className="container">
-        <h2 className="section-title text-center"> Packages</h2>
+        <h2 className="section-title"> Packages</h2>
         <p className="section-subtitle">We offer tailored pricing to meet varying business needs:</p>
         
         <div className="row g-4 justify-content-center">

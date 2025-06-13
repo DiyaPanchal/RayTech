@@ -4,7 +4,6 @@ import Services from "../components/Services";
 import WhyChoose from "../components/WhyChoose";
 import CallToAction from "../components/CallToAction";
 import Contact from "../components/Contact";
-import "../css/home.css";
 
 export default function Home() {
   return (
