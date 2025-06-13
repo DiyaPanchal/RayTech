@@ -1,8 +1,7 @@
-import React from 'react';
-import '../../css/webDevelopment.css';
+import '../css/webdetails.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-const WebDevelopment = () => {
+const WebDetails = () => {
   const benefits = [
     {
       title: "Brand Visibility",
@@ -106,7 +105,7 @@ const WebDevelopment = () => {
               as they say, first impressions are everything.
             </p>
           </div>
-          <div className="intro-animation">
+           <div className="intro-animation">
             <DotLottieReact
               src="https://lottie.host/0d403623-9af4-4984-980c-b069f4727fe7/XR1rNr4L3j.lottie"
               loop
@@ -178,4 +177,4 @@ const WebDevelopment = () => {
   );
 };
 
-export default WebDevelopment; 
+export default WebDetails; 

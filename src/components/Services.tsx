@@ -10,8 +10,25 @@ export default function Services() {
   const navigate = useNavigate();
 
   const handleServiceClick = (title: string) => {
-    const serviceUrl = title.toLowerCase().replace(/\s+/g, '-');
-    navigate(`/services/${serviceUrl}`);
+    switch (title) {
+      case "Website Design Development":
+        navigate("/web");
+        break;
+      case "Graphic Design":
+        navigate("/graphic");
+        break;
+      case "SEO Services":
+        navigate("/seo");
+        break;
+      case "Digital Marketing":
+        navigate("/digital");
+        break;
+      case "ERP Solutions":
+        navigate("/erp");
+        break;
+      default:
+        navigate("/");
+    }
   };
   
   const services = [
