@@ -12,8 +12,10 @@ import {
   FaGraduationCap,
   FaBuilding,
 } from "react-icons/fa";
+
+import "../css/graphicdetails.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  SiAdobe,
   SiAdobephotoshop,
   SiAdobeillustrator,
   SiAdobeindesign,
@@ -24,8 +26,42 @@ import {
   SiAdobeaftereffects,
   SiAdobepremierepro,
 } from "react-icons/si";
+import KeyBenefits from "./KeyBenefits";
 
 const GraphicDetails = () => {
+  const benefits = [
+    {
+      icon: <FaCheckCircle />,
+      title: "Brand Recognition",
+      description:
+        "Create memorable logos and consistent visual identity across all platforms. It's the foundation of your brand's personality.",
+    },
+    {
+      icon: <FaUsers />,
+      title: "Customer Engagement",
+      description:
+        "Well-designed banners, social media posts, brochures, and flyers grab attention and drive action.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Competitive Advantage",
+      description:
+        "Brands with refined visual presentation outperform their competition in customer retention and marketing ROI.",
+    },
+    {
+      icon: <FaComments />,
+      title: "Communication Efficiency",
+      description:
+        "A single visual can convey messages that would take paragraphs to write. Design enhances clarity and emotion.",
+    },
+    {
+      icon: <FaTrophy />,
+      title: "Marketing Success",
+      description:
+        "Campaigns with strong graphics generate higher impressions, engagement, and conversions.",
+    },
+  ];
+
   return (
     <div className="graphic-details-section">
       <div className="custom-container">
@@ -76,85 +112,11 @@ const GraphicDetails = () => {
         {/* Key Benefits Section */}
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <div className="graphic-why-section">
-              <h3 className="section-title mb-4">Key Benefits</h3>
-              <div className="row g-4">
-                <div className="col-md-6">
-                  <div className="benefit-card">
-                    <div className="benefit-icon">
-                      <FaCheckCircle />
-                    </div>
-                    <div className="benefit-content">
-                      <h4 className="benefit-title">Brand Recognition</h4>
-                      <p className="benefit-description">
-                        Create memorable logos and consistent visual identity
-                        across all platforms. It's the foundation of your
-                        brand's personality.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="benefit-card">
-                    <div className="benefit-icon">
-                      <FaUsers />
-                    </div>
-                    <div className="benefit-content">
-                      <h4 className="benefit-title">Customer Engagement</h4>
-                      <p className="benefit-description">
-                        Well-designed banners, social media posts, brochures,
-                        and flyers grab attention and drive action.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="benefit-card">
-                    <div className="benefit-icon">
-                      <FaChartLine />
-                    </div>
-                    <div className="benefit-content">
-                      <h4 className="benefit-title">Competitive Advantage</h4>
-                      <p className="benefit-description">
-                        Brands with refined visual presentation outperform their
-                        competition in customer retention and marketing ROI.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="benefit-card">
-                    <div className="benefit-icon">
-                      <FaComments />
-                    </div>
-                    <div className="benefit-content">
-                      <h4 className="benefit-title">
-                        Communication Efficiency
-                      </h4>
-                      <p className="benefit-description">
-                        A single visual can convey messages that would take
-                        paragraphs to write. Design enhances clarity and
-                        emotion.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 mx-auto">
-                  <div className="benefit-card">
-                    <div className="benefit-icon">
-                      <FaTrophy />
-                    </div>
-                    <div className="benefit-content">
-                      <h4 className="benefit-title">Marketing Success</h4>
-                      <p className="benefit-description">
-                        Campaigns with strong graphics generate higher
-                        impressions, engagement, and conversions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <KeyBenefits
+              benefits={benefits}
+              title="Key Benefits"
+              subtitle="Discover how professional graphic design can transform your brand and drive business growth"
+            />
           </div>
         </div>
 
