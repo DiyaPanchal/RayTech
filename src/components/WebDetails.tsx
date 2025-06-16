@@ -1,25 +1,32 @@
 import '../css/webdetails.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { FaCheckCircle, FaUsers, FaChartLine, FaComments, FaTrophy } from 'react-icons/fa';
+import KeyBenefits from './KeyBenefits';
 
 const WebDetails = () => {
   const benefits = [
     {
+      icon: <FaCheckCircle />,
       title: "Brand Visibility",
       description: "Your website is the face of your business. It allows you to showcase your services, products, and values to a global audience, 24/7."
     },
     {
+      icon: <FaUsers />,
       title: "Customer Engagement",
       description: "A well-designed website creates an interactive experience, allowing you to engage with potential customers through inquiries, bookings, or product sales."
     },
     {
+      icon: <FaChartLine />,
       title: "Trust & Credibility",
       description: "A professional website enhances your reputation, building trust with customers. A modern, user-friendly design signals quality and expertise."
     },
     {
+      icon: <FaComments />,
       title: "Competitive Edge",
       description: "In a crowded market, having a unique, optimized website gives you the edge over competitors, making your brand stand out and allowing you to capture more market share."
     },
     {
+      icon: <FaTrophy />,
       title: "SEO & Lead Generation",
       description: "A website serves as the foundation for your digital marketing strategy. By implementing SEO best practices, your site can drive organic traffic and generate leads, boosting your visibility and sales."
     }
@@ -115,17 +122,14 @@ const WebDetails = () => {
         </div>
 
         <div className="benefits-section">
-          <div className="section-heading-wrapper">
-            <h2 className="section-title">Key Benefits</h2>
-            <p className="byline">Discover how a professional website can transform your business and drive sustainable growth</p>
-          </div>
-          <div className="benefits-container">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="benefit-item">
-                <h3 className="benefit-title">{benefit.title}</h3>
-                <p className="benefit-description mb-0">{benefit.description}</p>
-              </div>
-            ))}
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <KeyBenefits 
+                benefits={benefits}
+                title="Key Benefits"
+                subtitle="Discover how a professional website can transform your business and drive sustainable growth"
+              />
+            </div>
           </div>
           <div className="section-dots dots-top-right"></div>
           <div className="section-dots dots-bottom-left"></div>
