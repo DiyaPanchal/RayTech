@@ -1,8 +1,29 @@
-import '../css/graphicdetails.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaCheckCircle, FaUsers, FaChartLine, FaComments, FaTrophy, FaRocket, FaTooth, FaShoppingBag, FaGraduationCap, FaBuilding } from 'react-icons/fa';
-import { SiAdobe, SiAdobephotoshop, SiAdobeillustrator, SiAdobeindesign, SiFigma, SiCanva, SiCoreldraw, SiAdobexd, SiAdobeaftereffects, SiAdobepremierepro } from 'react-icons/si';
+import "../css/graphicdetails.css";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import {
+  FaCheckCircle,
+  FaUsers,
+  FaChartLine,
+  FaComments,
+  FaTrophy,
+  FaRocket,
+  FaTooth,
+  FaShoppingBag,
+  FaGraduationCap,
+  FaBuilding,
+} from "react-icons/fa";
+import {
+  SiAdobe,
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobeindesign,
+  SiFigma,
+  SiCanva,
+  SiCoreldraw,
+  SiAdobexd,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+} from "react-icons/si";
 
 const GraphicDetails = () => {
   return (
@@ -28,15 +49,25 @@ const GraphicDetails = () => {
               />
             </div>
           </div>
-          
+
           {/* Byline section */}
           <div className="col-lg-5">
             <div className="graphic-byline-section">
               <p className="graphic-byline">
-                In today's digital landscape, compelling design is more than just aesthetics—it's a <strong>strategic business investment</strong>. Our expert team transforms your vision into stunning visuals that captivate your audience and drive results. From brand identity to marketing materials, we create designs that not only look beautiful but also deliver measurable impact.
+                In today's digital landscape, compelling design is more than
+                just aesthetics—it's a{" "}
+                <strong>strategic business investment</strong>. Our expert team
+                transforms your vision into stunning visuals that captivate your
+                audience and drive results. From brand identity to marketing
+                materials, we create designs that not only look beautiful but
+                also deliver measurable impact.
               </p>
               <p className="graphic-byline">
-                Whether you're building a brand, launching a product, or running a campaign, our designs build trust, enhance engagement, and boost conversion rates. We combine creativity with strategy to ensure your visual content stands out in today's competitive market.
+                Whether you're building a brand, launching a product, or running
+                a campaign, our designs build trust, enhance engagement, and
+                boost conversion rates. We combine creativity with strategy to
+                ensure your visual content stands out in today's competitive
+                market.
               </p>
             </div>
           </div>
@@ -56,7 +87,9 @@ const GraphicDetails = () => {
                     <div className="benefit-content">
                       <h4 className="benefit-title">Brand Recognition</h4>
                       <p className="benefit-description">
-                        Create memorable logos and consistent visual identity across all platforms. It's the foundation of your brand's personality.
+                        Create memorable logos and consistent visual identity
+                        across all platforms. It's the foundation of your
+                        brand's personality.
                       </p>
                     </div>
                   </div>
@@ -69,7 +102,8 @@ const GraphicDetails = () => {
                     <div className="benefit-content">
                       <h4 className="benefit-title">Customer Engagement</h4>
                       <p className="benefit-description">
-                        Well-designed banners, social media posts, brochures, and flyers grab attention and drive action.
+                        Well-designed banners, social media posts, brochures,
+                        and flyers grab attention and drive action.
                       </p>
                     </div>
                   </div>
@@ -82,7 +116,8 @@ const GraphicDetails = () => {
                     <div className="benefit-content">
                       <h4 className="benefit-title">Competitive Advantage</h4>
                       <p className="benefit-description">
-                        Brands with refined visual presentation outperform their competition in customer retention and marketing ROI.
+                        Brands with refined visual presentation outperform their
+                        competition in customer retention and marketing ROI.
                       </p>
                     </div>
                   </div>
@@ -93,9 +128,13 @@ const GraphicDetails = () => {
                       <FaComments />
                     </div>
                     <div className="benefit-content">
-                      <h4 className="benefit-title">Communication Efficiency</h4>
+                      <h4 className="benefit-title">
+                        Communication Efficiency
+                      </h4>
                       <p className="benefit-description">
-                        A single visual can convey messages that would take paragraphs to write. Design enhances clarity and emotion.
+                        A single visual can convey messages that would take
+                        paragraphs to write. Design enhances clarity and
+                        emotion.
                       </p>
                     </div>
                   </div>
@@ -108,7 +147,8 @@ const GraphicDetails = () => {
                     <div className="benefit-content">
                       <h4 className="benefit-title">Marketing Success</h4>
                       <p className="benefit-description">
-                        Campaigns with strong graphics generate higher impressions, engagement, and conversions.
+                        Campaigns with strong graphics generate higher
+                        impressions, engagement, and conversions.
                       </p>
                     </div>
                   </div>
@@ -119,14 +159,18 @@ const GraphicDetails = () => {
         </div>
 
         <hr className="graphic-section-divider" />
-        
+
         {/* Target Audience Section */}
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <section className="graphic-who-needs-section">
               <div className="graphic-section-heading-wrapper">
                 <h2 className="section-title">Target Audience</h2>
-                <p className="graphic-byline">Graphic design is essential for businesses, professionals, and organizations looking to stand out and connect with their audience.</p>
+                <p className="graphic-byline">
+                  Graphic design is essential for businesses, professionals, and
+                  organizations looking to stand out and connect with their
+                  audience.
+                </p>
               </div>
               <div className="audience-grid">
                 <div className="audience-item">
@@ -177,7 +221,11 @@ const GraphicDetails = () => {
             <section className="graphic-experts-section">
               <div className="graphic-section-heading-wrapper">
                 <h2 className="section-title">Design Tools & Platforms</h2>
-                <p className="graphic-byline">We leverage industry-leading tools and creative expertise to deliver pixel-perfect, impactful graphic design solutions for your brand.</p>
+                <p className="graphic-byline">
+                  We leverage industry-leading tools and creative expertise to
+                  deliver pixel-perfect, impactful graphic design solutions for
+                  your brand.
+                </p>
               </div>
               <div className="tools-showcase">
                 <div className="tool-category">
@@ -257,7 +305,10 @@ const GraphicDetails = () => {
             <section className="graphic-core-services-section">
               <div className="graphic-section-heading-wrapper">
                 <h2 className="section-title">Core Services</h2>
-                <p className="graphic-byline">Comprehensive graphic design solutions tailored to your brand and business needs.</p>
+                <p className="graphic-byline">
+                  Comprehensive graphic design solutions tailored to your brand
+                  and business needs.
+                </p>
               </div>
               <div className="services-showcase">
                 <div className="service-item">
@@ -325,4 +376,4 @@ const GraphicDetails = () => {
   );
 };
 
-export default GraphicDetails; 
+export default GraphicDetails;

@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>Ray Tech Pvt. Ltd. © 2024 — All Rights Reserved.</p>
+            <p>Ray Tech Pvt. Ltd. © 2025 — All Rights Reserved.</p>
             <div className="footer-bottom-links">
               <a href="/privacy-policy">Privacy Policy</a>
               <span className="separator">|</span>
