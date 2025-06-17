@@ -1,5 +1,5 @@
 .footer {
-  background: #1A1A1A;
+  background: #1a1a1a;
   color: #fff;
   padding: 5rem 0 2rem;
   position: relative;
@@ -7,13 +7,18 @@
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
 }
 
 .footer-content {
@@ -41,7 +46,7 @@
 }
 
 .company-description {
-  color: #A1A1AA;
+  color: #a1a1aa;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -62,13 +67,13 @@
 .footer-links h3::after,
 .footer-contact h3::after,
 .footer-social h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 40px;
   height: 2px;
-  background: linear-gradient(to right, #2563EB, #1D4ED8);
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
   border-radius: 2px;
   transition: width 0.3s ease;
 }
@@ -91,7 +96,7 @@
 }
 
 .footer-links ul li a {
-  color: #A1A1AA;
+  color: #a1a1aa;
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.95rem;
@@ -101,16 +106,16 @@
 }
 
 .footer-links ul li a::before {
-  content: '›';
+  content: "›";
   position: absolute;
   left: -20px;
-  color: #2563EB;
+  color: #2563eb;
   opacity: 0;
   transition: all 0.3s ease;
 }
 
 .footer-links ul li a:hover {
-  color: #2563EB;
+  color: #2563eb;
   padding-left: 20px;
 }
 
@@ -123,7 +128,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 1.25rem;
-  color: #A1A1AA;
+  color: #a1a1aa;
   transition: all 0.3s ease;
 }
 
@@ -132,15 +137,15 @@
   color: #fff;
 }
 
-.contact-icon {
-  color: #2563EB;
+.footer-contact-icon {
+  color: #2563eb;
   font-size: 1.25rem;
   margin-right: 1rem;
   margin-top: 0.25rem;
   transition: all 0.3s ease;
 }
 
-.contact-list li:hover .contact-icon {
+.contact-list li:hover .footer-contact-icon {
   transform: scale(1.2);
 }
 
@@ -172,13 +177,13 @@
 }
 
 .social-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   opacity: 0;
   transition: all 0.3s ease;
   transform: scale(0.5);
@@ -212,7 +217,7 @@
 }
 
 .company-certifications p {
-  color: #A1A1AA;
+  color: #a1a1aa;
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
 }
@@ -232,7 +237,7 @@
 }
 
 .footer-bottom p {
-  color: #A1A1AA;
+  color: #a1a1aa;
   font-size: 0.9rem;
   margin: 0;
 }
@@ -244,7 +249,7 @@
 }
 
 .footer-bottom-links a {
-  color: #A1A1AA;
+  color: #a1a1aa;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
@@ -252,18 +257,18 @@
 }
 
 .footer-bottom-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 0;
   height: 1px;
-  background: #2563EB;
+  background: #2563eb;
   transition: width 0.3s ease;
 }
 
 .footer-bottom-links a:hover {
-  color: #2563EB;
+  color: #2563eb;
 }
 
 .footer-bottom-links a:hover::after {
@@ -271,7 +276,7 @@
 }
 
 .separator {
-  color: #A1A1AA;
+  color: #a1a1aa;
 }
 
 @media (max-width: 768px) {
@@ -319,4 +324,4 @@
   .company-certifications {
     text-align: center;
   }
-} 
+}

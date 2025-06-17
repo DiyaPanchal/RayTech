@@ -31,21 +31,21 @@ export default function Footer() {
             <h3>Contact Info</h3>
             <ul className="contact-list">
               <li>
-                <FaMapMarkerAlt className="contact-icon" />
+                <FaMapMarkerAlt className="footer-contact-icon" />
                 <div>
                   <p>Ray Tech Pvt. Ltd.</p>
                   <p>Ahmedabad, Gujarat, India</p>
                 </div>
               </li>
               <li>
-                <FaPhoneAlt className="contact-icon" />
+                <FaPhoneAlt className="footer-contact-icon" />
                 <div>
                   <p>+91 91576 71794</p>
                   <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
                 </div>
               </li>
               <li>
-                <FaEnvelope className="contact-icon" />
+                <FaEnvelope className="footer-contact-icon" />
                 <div>
                   <p>info@raytech.com</p>
                   <p>support@raytech.com</p>
