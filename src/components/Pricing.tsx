@@ -17,12 +17,12 @@ interface PricingProps {
 const Pricing = ({ packages }: PricingProps) => {
   return (
     <section className="pricing-section">
-      <div className="container">
+      <div className="custom-container">
         <h2 className="section-title"> Packages</h2>
         <p className="section-subtitle">We offer tailored pricing to meet varying business needs:</p>
         
         <div className="row g-4 justify-content-center">
-          {packages.map((pkg, idx) => (
+          {packages.map((pkg) => (
             <div key={pkg.name} className="col-12 col-md-6 col-lg-4">
               <div className={`pricing-card${pkg.featured ? ' featured' : ''}`}> 
                 {pkg.featured && pkg.badgeText && (

@@ -1,5 +1,5 @@
 .contact-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
   background: linear-gradient(to bottom, #F8FAFF, #FFFFFF);
   position: relative;
 }
@@ -270,7 +270,7 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .contact-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .contact-section .section-title {

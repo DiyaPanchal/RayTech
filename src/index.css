@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -82,7 +82,7 @@ button:focus-visible {
 .section-title {
   font-size: calc(1.75rem + 1vw) !important;
   font-weight: 800 !important;
-  margin-bottom: 0.75rem;
+  margin-bottom: 3rem;
   background: linear-gradient(to right, #1A1A1A, #2563EB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

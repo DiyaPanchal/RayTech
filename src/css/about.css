@@ -1,6 +1,5 @@
 .about-section {
-  padding: 6rem 0;
-  background: linear-gradient(to bottom, #FFFFFF, #F8FAFF);
+  padding: 8rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -59,7 +58,7 @@
 .about-title {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   background: linear-gradient(to right, #1A1A1A, #2563EB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

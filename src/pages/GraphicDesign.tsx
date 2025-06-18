@@ -1,5 +1,6 @@
 import GraphicDetails from '../components/GraphicDetails';
 import Pricing, { type PricingPackage } from '../components/Pricing';
+import Layout from '../components/Layout';
 import '../css/serviceDetails.css';
 
 const graphicDesignPackages: PricingPackage[] = [
@@ -41,10 +42,12 @@ const graphicDesignPackages: PricingPackage[] = [
 
 const GraphicDesignPage = () => {
   return (
-    <div className="service-details-page">
-      <GraphicDetails />
-      <Pricing packages={graphicDesignPackages} />
-    </div>
+    <Layout>
+      <div className="service-details-page">
+        <GraphicDetails />
+        <Pricing packages={graphicDesignPackages} />
+      </div>
+    </Layout>
   );
 };
 

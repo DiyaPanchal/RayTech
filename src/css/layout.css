@@ -1,0 +1,57 @@
+/* Layout Component Styles */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Main content area that takes up remaining space */
+.layout > *:nth-child(2) {
+  flex: 1;
+  margin-top: 80px; /* Account for fixed navbar height */
+  min-height: calc(100vh - 80px - 400px); /* 100vh - navbar - footer (approximate) */
+}
+
+/* Ensure proper spacing for different page containers */
+/* .home-container,
+.service-details-page {
+  width: 100%;
+  min-height: 100%;
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout > *:nth-child(2) {
+    margin-top: 70px; /* Slightly smaller navbar on mobile */
+    min-height: calc(100vh - 70px - 350px);
+  }
+}
+
+@media (max-width: 576px) {
+  .layout > *:nth-child(2) {
+    margin-top: 65px; /* Even smaller navbar on very small screens */
+    min-height: calc(100vh - 65px - 300px);
+  }
+}
+
+/* Ensure the layout takes full width */
+.layout {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling for the entire layout */
+.layout {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper stacking context */
+.layout {
+  z-index: 1;
+}
+
+/* Ensure footer stays at bottom */
+.layout > *:last-child {
+  margin-top: auto;
+} 

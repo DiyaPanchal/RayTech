@@ -1,21 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
-import Layout from "./components/Layout";
 import WebDevelopmentPage from "./pages/WebDevelopment";
 import GraphicDesignPage from "./pages/GraphicDesign";
+import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/web" element={<WebDevelopmentPage />} />
-          <Route path="/graphic" element={<GraphicDesignPage />} />
-        </Routes>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/web" element={<WebDevelopmentPage />} />
+        <Route path="/graphic" element={<GraphicDesignPage />} />
+      </Routes>
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -28,7 +28,6 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      </Layout>
     </Router>
   );
 }

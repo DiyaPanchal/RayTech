@@ -66,7 +66,7 @@ const GraphicDetails = () => {
     <div className="graphic-details-section">
       <div className="custom-container">
         {/* Main Title */}
-        <div className="row justify-content-center mb-5">
+        <div className="row justify-content-center">
           <div className="col-12 text-center">
             <h1 className="graphic-main-title">Graphic Design</h1>
           </div>

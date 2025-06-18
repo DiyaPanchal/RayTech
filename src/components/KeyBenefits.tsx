@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaCheckCircle, FaUsers, FaChartLine, FaComments, FaTrophy } from 'react-icons/fa';
 import '../css/keybenefits.css';
 
 interface Benefit {
