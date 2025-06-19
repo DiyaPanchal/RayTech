@@ -8,17 +8,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
 
-// Scroll to top component
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
-
 function App() {
   return (
     <Router>
