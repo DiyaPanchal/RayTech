@@ -1,15 +1,18 @@
 /* Base styles with Bootstrap overrides */
 .web-dev-section {
-  background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
   padding-top: 3rem !important;
+}
+.web-dev-herosection{
+    background-color: #F8FAFF;
+        padding: 4rem 0;
 }
 
 /* Section Headers */
 .section-heading-wrapper {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   padding: 0 1rem;
 }
 
@@ -19,13 +22,11 @@
   color: #4A5568;
   text-align: center;
   margin: 0 auto 1rem;
-  max-width: 800px;
   line-height: 1.6;
 }
 
 /* Intro Section */
 .intro-section {
-  margin: 0 0 6rem;
   position: relative;
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -74,15 +75,16 @@
   text-align: center;
 }
 
+.benefits-section{
+      padding: 4rem 0;
+}
 
 
 /* Tech Stack Section */
 .technical-section {
   position: relative;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
-  border-radius: 2rem;
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
+  background-color: #F8FAFF;
+        padding: 4rem 0;
 }
 
 .tech-grid {
@@ -239,8 +241,8 @@
 
 /* Services Section */
 .web-dev-services-section {
-  margin: 6rem 0;
   position: relative;
+  padding: 4rem 0;
 }
 
 .web-dev-services-grid {

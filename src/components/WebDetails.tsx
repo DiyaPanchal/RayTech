@@ -92,38 +92,42 @@ const WebDetails = () => {
   ];
 
   return (
-    <div className="web-dev-section">
-      <div className="custom-container">
-        <div className="section-heading-wrapper">
-          <h1 className="section-title">Web Design & Development</h1>
+    <div className="web-dev-section">  
+<div className="web-dev-herosection">
+          <div className="custom-container">
+          <div className="section-heading-wrapper">
+            <h1 className="main-title">Web Design & Development</h1>
+          </div>
+          
+          <div className="intro-section">
+            <div className="intro-content">
+              <p className="intro-text">
+                Unlock Your Digital Potential with Ray Tech! In today's digital-first world, 
+                a website is no longer just an option — it's an essential tool for 
+                growth, engagement, and credibility. Whether you're a startup, a small business, 
+                a government officer or private officer looking for part time or full time business 
+                or an enterprise, your online presence is critical for reaching and retaining customers.
+              </p>
+              <p className="intro-text mb-0">
+                Your website is often the first point of contact for potential clients, partners, and customers 
+                as they say, first impressions are everything.
+              </p>
+            </div>
+            <div className="intro-animation">
+              <DotLottieReact
+                src="https://lottie.host/0d403623-9af4-4984-980c-b069f4727fe7/XR1rNr4L3j.lottie"
+                loop
+                autoplay
+              />
+          </div>
         </div>
-        
-        <div className="intro-section">
-          <div className="intro-content">
-            <p className="intro-text">
-              Unlock Your Digital Potential with Ray Tech! In today's digital-first world, 
-              a website is no longer just an option — it's an essential tool for 
-              growth, engagement, and credibility. Whether you're a startup, a small business, 
-              a government officer or private officer looking for part time or full time business 
-              or an enterprise, your online presence is critical for reaching and retaining customers.
-            </p>
-            <p className="intro-text mb-0">
-              Your website is often the first point of contact for potential clients, partners, and customers 
-              as they say, first impressions are everything.
-            </p>
-          </div>
-           <div className="intro-animation">
-            <DotLottieReact
-              src="https://lottie.host/0d403623-9af4-4984-980c-b069f4727fe7/XR1rNr4L3j.lottie"
-              loop
-              autoplay
-            />
-          </div>
+      </div>
         </div>
 
         <div className="benefits-section">
+            <div className="custom-container">
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="">
               <KeyBenefits 
                 benefits={benefits}
                 title="Key Benefits"
@@ -134,8 +138,10 @@ const WebDetails = () => {
           <div className="section-dots dots-top-right"></div>
           <div className="section-dots dots-bottom-left"></div>
         </div>
+            </div>
 
         <div className="technical-section">
+          <div className="custom-container">
           <div className="section-heading-wrapper">
             <h2 className="section-title">Our Tech Stack</h2>
             <p className="byline">Powered by cutting-edge technologies and frameworks to deliver robust, scalable solutions</p>
@@ -161,8 +167,10 @@ const WebDetails = () => {
             ))}
           </div>
         </div>
+          </div>
 
         <div className="web-dev-services-section">
+          <div className="custom-container">
           <div className="section-heading-wrapper">
             <h2 className="section-title">Core Services</h2>
             <p className="byline">Comprehensive web development solutions tailored to your specific needs and industry requirements</p>
@@ -177,7 +185,8 @@ const WebDetails = () => {
           <div className="section-dots dots-bottom-left"></div>
         </div>
       </div>
-    </div>
+          </div>
+    
   );
 };
 
