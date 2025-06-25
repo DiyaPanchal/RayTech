@@ -9,7 +9,7 @@
 /* Main content area that takes up remaining space */
 .layout > *:nth-child(2) {
   flex: 1;
-  margin-top: 80px; /* Account for fixed navbar height */
+  margin-top: 96px; /* Account for fixed navbar height */
   min-height: calc(100vh - 80px - 400px); /* 100vh - navbar - footer (approximate) */
 }
 

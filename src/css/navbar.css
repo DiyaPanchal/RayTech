@@ -14,7 +14,10 @@
   padding: 1rem 2rem !important;
   transition: all 0.3s ease;
   position: relative;
-  z-index: 1001;
+  z-index: 1001; 
+  display: flex;
+  align-items: center;
+  height: 96px;
 }
 
 .navbar-brand-container {
@@ -145,6 +148,7 @@
   }
 
   /* Blur overlay when mobile menu is open */
+  /*
   .blur-overlay {
     position: fixed;
     top: 0;
@@ -166,6 +170,7 @@
     visibility: visible;
     pointer-events: auto;
   }
+  */
 }
 
 @media (max-width: 576px) {
@@ -180,4 +185,9 @@
   .navbar-collapse {
     width: 100%;
   }
+}
+
+/* Add a utility class for main content offset */
+.main-content {
+  margin-top: 80px; /* Same as header height */
 }

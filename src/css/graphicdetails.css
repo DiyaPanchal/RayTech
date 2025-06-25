@@ -1,9 +1,7 @@
 /* Base styles with gradient background and spacing */
 .graphic-details-section {
-  background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 4rem !important;
   padding-bottom: 4rem !important;
 }
 
@@ -12,7 +10,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .lottie-animation {
@@ -31,7 +28,7 @@
 }
 
 .graphic-byline {
-  text-align: left;
+  text-align: center;
   font-size: 1.1rem !important;
   color: #4B5563 !important;
   line-height: 1.8 !important;
@@ -118,6 +115,10 @@
 }
 
 /* Target Audience Section */
+.target-audience-section{
+  padding: 4rem 0;
+  background-color: #F8FAFF;
+}
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -190,6 +191,10 @@
 }
 
 /* Design Tools Section */
+.design-tools-section{
+  padding: 4rem 0;
+}
+
 .tools-showcase {
   margin-top: 2rem;
 }
@@ -283,6 +288,10 @@
 }
 
 /* Core Services Section */
+.core-services-section{
+  padding: 4rem 0;
+  background-color: #F8FAFF;
+}
 .services-showcase {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

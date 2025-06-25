@@ -1,6 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-import { useEffect } from "react";
 import Home from "./pages/Home";
 import WebDevelopmentPage from "./pages/WebDevelopment";
 import GraphicDesignPage from "./pages/GraphicDesign";

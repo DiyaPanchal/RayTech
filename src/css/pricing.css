@@ -1,10 +1,10 @@
 .pricing-section {
-  padding: 4rem 0;
-  background: linear-gradient(to bottom, #FFFFFF, #F8FAFF);
+  padding: 1rem 0 4rem 0;
+  /* background: linear-gradient(to bottom, #FFFFFF, #F8FAFF); */
   position: relative;
 }
 
-.pricing-section::before {
+/* .pricing-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -12,7 +12,7 @@
   right: 0;
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(37, 99, 235, 0.1), transparent);
-}
+} */
 
 .section-subtitle {
   color: #4A5568;

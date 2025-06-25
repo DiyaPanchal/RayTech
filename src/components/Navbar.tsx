@@ -95,10 +95,12 @@ export default function Navbar() {
         </nav>
       </div>
       {/* Blur overlay - moved outside navbar */}
+      {/*
       <div 
         className={`blur-overlay ${isOpen ? "show" : ""}`}
         onClick={closeMenu}
       ></div>
+      */}
     </>
   );
 }
