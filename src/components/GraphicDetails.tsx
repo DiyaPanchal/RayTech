@@ -43,12 +43,12 @@ const GraphicDetails = () => {
       description:
         "Well-designed banners, social media posts, brochures, and flyers grab attention and drive action.",
     },
-    {
-      icon: <FaChartLine />,
-      title: "Competitive Advantage",
-      description:
-        "Brands with refined visual presentation outperform their competition in customer retention and marketing ROI.",
-    },
+    // {
+    //   icon: <FaChartLine />,
+    //   title: "Competitive Advantage",
+    //   description:
+    //     "Brands with refined visual presentation outperform their competition in customer retention and marketing ROI.",
+    // },
     {
       icon: <FaComments />,
       title: "Communication Efficiency",
@@ -111,8 +111,8 @@ const GraphicDetails = () => {
         <div className="custom-container">
           <div className="row justify-content-center">
         <div className="col-lg-12">
-          <section className="graphic-who-needs-section">
-            <div className="graphic-section-heading-wrapper">
+          <section>
+            <div className="section-heading-wrapper">
               <h2 className="section-title">Target Audience</h2>
               <p className="byline">
                 Graphic design is essential for businesses, professionals, and
@@ -170,7 +170,7 @@ const GraphicDetails = () => {
 <div className="row justify-content-center">
         <div className="col-lg-12">
           <section className="graphic-experts-section">
-            <div className="graphic-section-heading-wrapper">
+            <div className="section-heading-wrapper">
               <h2 className="section-title">Design Tools & Platforms</h2>
               <p className="byline">
                 We leverage industry-leading tools and creative expertise to
@@ -257,7 +257,7 @@ const GraphicDetails = () => {
 <div className="row justify-content-center">
         <div className="col-lg-12">
           <section className="graphic-core-services-section">
-            <div className="graphic-section-heading-wrapper">
+            <div className="section-heading-wrapper">
               <h2 className="section-title">Core Services</h2>
               <p className="byline">
                 Comprehensive graphic design solutions tailored to your brand

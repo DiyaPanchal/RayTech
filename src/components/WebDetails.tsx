@@ -21,11 +21,11 @@ const WebDetails = () => {
       title: "Trust & Credibility",
       description: "A professional website enhances your reputation, building trust with customers. A modern, user-friendly design signals quality and expertise."
     },
-    {
-      icon: <FaComments />,
-      title: "Competitive Edge",
-      description: "In a crowded market, having a unique, optimized website gives you the edge over competitors, making your brand stand out and allowing you to capture more market share."
-    },
+    // {
+    //   icon: <FaComments />,
+    //   title: "Competitive Edge",
+    //   description: "In a crowded market, having a unique, optimized website gives you the edge over competitors, making your brand stand out and allowing you to capture more market share."
+    // },
     {
       icon: <FaTrophy />,
       title: "SEO & Lead Generation",
@@ -49,9 +49,11 @@ const WebDetails = () => {
       icons: [
         { name: "PHP", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
         { name: "Firebase", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
-        { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+        { name: "MySQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }, 
+        { name: "NodeJS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" }
       ],
-      items: ["PHP", "Firebase", "Appwrite", "MySQL"]
+      items: ["PHP", "Firebase", "Appwrite", "MySQL", "NodeJS", "Express"]
     },
     {
       category: "Tools & Frameworks",
@@ -70,19 +72,18 @@ const WebDetails = () => {
       ],
       items: ["Custom platforms", "Firebase", "PHP integration"]
     },
-    {
-      category: "Special Features",
-      icons: [
-        { name: "NodeJS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-        { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" }
-      ],
-      items: ["Admin Panels", "Budgeting Tools", "Resume Builders", "Social Media Automation"]
-    }
+    // {
+    //   category: "Special Features",
+    //   icons: [
+    //     { name: "NodeJS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    //     { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" }
+    //   ],
+    //   items: ["Admin Panels", "Budgeting Tools", "Resume Builders", "Social Media Automation"]
+    // }
   ];
 
   const services = [
     "Corporate, Portfolio, and Educational Website",
-    "Premium Dental Doctors Websites",
     "E-commerce Platforms (React + Firebase)",
     "Travel & Tour Booking Platforms",
     "Resume Builders & Job Portals",

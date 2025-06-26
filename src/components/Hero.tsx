@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="custom-container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Your Gateway to Digital Excellence!</h1>
+            <h1 className="hero-title">Your Gateway to Digital Excellence!</h1>
             <p>
               We don't just create technology – we create transformations.
               Partner with us to build innovative digital solutions.

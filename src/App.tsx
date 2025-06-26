@@ -3,6 +3,8 @@ import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
 import WebDevelopmentPage from "./pages/WebDevelopment";
 import GraphicDesignPage from "./pages/GraphicDesign";
+import SeoPage from "./pages/Seo";
+import DigitalMarketingPage from "./pages/DigitalMarketing";
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/web" element={<WebDevelopmentPage />} />
         <Route path="/graphic" element={<GraphicDesignPage />} />
+        <Route path="/seo" element={<SeoPage />} />
+        <Route path="/digital" element={<DigitalMarketingPage />} />
       </Routes>
       <ToastContainer
         position="top-right"
