@@ -7,7 +7,7 @@ const seoPackages: PricingPackage[] = [
   {
     name: 'GOLD',
     price: '15,000',
-    usdPrice: '180',
+    usdPrice: '$ 180',
     features: [
       'Keyword Research: ✓',
       'Page Optimization: 5 pages',
@@ -22,7 +22,7 @@ const seoPackages: PricingPackage[] = [
   {
     name: 'PLATINUM',
     price: '30,000',
-    usdPrice: '360',
+    usdPrice: '$ 360',
     features: [
       'Keyword Research: ✓✓',
       'Page Optimization: 10 pages',
@@ -39,7 +39,7 @@ const seoPackages: PricingPackage[] = [
   {
     name: 'DIAMOND',
     price: '50,000',
-    usdPrice: '600',
+    usdPrice: '$ 600',
     features: [
       'Keyword Research: ✓✓✓',
       'Page Optimization: 20+ pages',
@@ -58,7 +58,7 @@ const SeoPage = () => {
     <Layout>
       <div className="service-details-page">
         <SeoDetails />
-        <Pricing packages={seoPackages} />
+        <Pricing packages={seoPackages} note="Prices are indicative and may vary based on project scope and requirements." />
       </div>
     </Layout>
   );

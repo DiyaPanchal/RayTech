@@ -5,6 +5,7 @@ import WebDevelopmentPage from "./pages/WebDevelopment";
 import GraphicDesignPage from "./pages/GraphicDesign";
 import SeoPage from "./pages/Seo";
 import DigitalMarketingPage from "./pages/DigitalMarketing";
+import ErpSolutionsPage from "./pages/ErpSolutions";
 import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/graphic" element={<GraphicDesignPage />} />
         <Route path="/seo" element={<SeoPage />} />
         <Route path="/digital" element={<DigitalMarketingPage />} />
+        <Route path="/erp" element={<ErpSolutionsPage />} />
       </Routes>
       <ToastContainer
         position="top-right"

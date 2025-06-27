@@ -1,0 +1,233 @@
+/* ERP Modules Section Styles */
+.erp-modules-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  background: linear-gradient(120deg, #f8faff 60%, #eaf2ff 100%);
+  border-radius: 2rem;
+  padding: 2.5rem 1.5rem;
+}
+.erp-module-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.10);
+  border-left: 6px solid #2563EB;
+  padding: 2.2rem 1.7rem 1.7rem 1.7rem;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.2s;
+  position: relative;
+  animation: fadeInERP 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.erp-module-card:hover {
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.18);
+  border-left: 6px solid #1D4ED8;
+  transform: translateY(-8px) scale(1.035);
+}
+.erp-module-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+}
+.erp-module-title {
+  color: #174ea6;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.erp-module-features {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #1A1A1A;
+  font-size: 1.02rem;
+  list-style: disc;
+}
+.erp-module-features li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+}
+.erp-module-features li:hover {
+  background: #eaf2ff;
+  color: #2563EB;
+}
+@media (max-width: 900px) {
+  .erp-modules-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.2rem 0.5rem;
+  }
+  .erp-module-card {
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+  }
+  .erp-module-title {
+    font-size: 1.08rem;
+  }
+}
+@keyframes fadeInERP {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+
+.erp-step-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.erp-step-card {
+  width: 270px;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s, transform 0.2s;
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: visible;
+  border: 1.5px solid #e3eafc;
+  animation: fadeInERP 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.erp-step-card:hover {
+  box-shadow: 0 20px 48px rgba(37, 99, 235, 0.22);
+  transform: translateY(-8px) scale(1.035);
+}
+.erp-step-card:hover .erp-step-chevron {
+  box-shadow: 0 0 0 4px #2563EB33, 0 2px 8px rgba(37,99,235,0.13);
+  z-index: 3;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.erp-step-card-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.erp-step-chevron {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  color: #fff;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  background: linear-gradient(135deg, #2563EB 60%, #1e40af 100%);
+}
+.erp-step-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: 1.1rem;
+  margin-bottom: 0.2rem;
+  display: block;
+  color: #fff;
+}
+.erp-step-icon {
+  font-size: 2.2rem !important;
+  color: #fff !important;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+.erp-step-card-content {
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.erp-step-title {
+  color: #174ea6;
+  font-size: 1.13rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.01em;
+}
+.erp-step-features {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #1A1A1A;
+  font-size: 0.98rem;
+  list-style: disc;
+  text-align: left;
+}
+.erp-step-features li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.4rem 0.1rem 0.2rem;
+}
+.erp-step-features li:hover {
+  background: #eaf2ff;
+  color: #2563EB;
+}
+@media (max-width: 1200px) {
+  .erp-step-cards-wrapper {
+    gap: 1.5rem;
+  }
+  .erp-step-card {
+    width: 220px;
+  }
+}
+@media (max-width: 900px) {
+  .erp-step-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .erp-step-card {
+    width: 95%;
+    min-width: 220px;
+    max-width: 400px;
+  }
+}
+
+.erp-step-divider {
+  width: 60%;
+  height: 1.5px;
+  background: #e3eafc;
+  margin: 1rem auto 1.2rem auto;
+  border-radius: 2px;
+}
+.erp-step-features-modern {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.erp-step-features-modern li {
+  color: #222;
+  font-size: 0.98rem;
+  font-weight: 500;
+  text-align: center;
+  background: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+.erp-step-features-modern li:hover {
+  background: none;
+  color: #2563EB;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(37,99,235,0.08);
+} 

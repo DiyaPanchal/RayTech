@@ -1,7 +1,7 @@
 import '../css/servicecommon.css';
 import '../css/digitalmarketingdetails.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaBullhorn, FaChartLine, FaUsers, FaRocket } from 'react-icons/fa';
+import { FaBullhorn, FaChartLine, FaUsers, FaRocket, FaSearch, FaLightbulb } from 'react-icons/fa';
 import KeyBenefits from './KeyBenefits';
 
 const DigitalMarketingDetails = () => {
@@ -49,7 +49,7 @@ const DigitalMarketingDetails = () => {
   // Core services data structured for grouped display
   const coreServices = [
     {
-      title: 'Social Media Marketing (SMM)',
+      title: 'Social Media Marketing',
       items: [
         'Facebook, Instagram, LinkedIn, Twitter Ads',
         'Page setup, content calendars, creatives, ad targeting',
@@ -57,7 +57,7 @@ const DigitalMarketingDetails = () => {
       ],
     },
     {
-      title: 'Search Engine Marketing (SEM)',
+      title: 'Search Engine Marketing',
       items: [
         'Google Ads (Search & Display) & Conversion tracking & A/B testing',
         'Remarketing campaigns & YouTube video ads',
@@ -163,6 +163,93 @@ With our cutting-edge expertise in website design, graphic design, SEO, digital 
                 </div>
               </section>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="dm-results-section">
+        <div className="custom-container">
+          <div className="section-heading-wrapper">
+            <h2 className="section-title">Digital Campaign Results Snapshot</h2>
+          </div>
+          <div className="dm-results-table-wrapper">
+            <table className="dm-results-table">
+              <thead>
+                <tr>
+                  <th>Client</th>
+                  <th>Industry</th>
+                  <th>Campaign</th>
+                  <th>Leads Generated</th>
+                  <th>Conversion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dental Clinic</td>
+                  <td>Healthcare</td>
+                  <td>Local Awareness + Booking</td>
+                  <td>900/month</td>
+                  <td>50+ new patients</td>
+                </tr>
+                <tr>
+                  <td>EdTech Startup</td>
+                  <td>Education</td>
+                  <td>Webinar Funnel + Lead Gen</td>
+                  <td>1200/month</td>
+                  <td>3,000+ course signups</td>
+                </tr>
+                <tr>
+                  <td>Boutique Brand</td>
+                  <td>Fashion</td>
+                  <td>E-commerce Sales</td>
+                  <td>3.5x ROAS</td>
+                  <td>₹1.8L in 30 days</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="dm-results-samplework">
+            <h4>Sample Creative Work <span style={{fontWeight:400}}>(on request)</span></h4>
+            <ul className="dm-results-sample-list">
+              <li>Social Media Post Templates</li>
+              <li>Ad Banners & Carousels, Landing Page Samples</li>
+              <li>Email Campaign Designs, Ad Copy Examples</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Performance Marketing Flowchart Section */}
+      <div className="performance-flowchart-section">
+        <div className="custom-container">
+          <h2 className="section-title">Scale with Performance Marketing</h2>
+          <div className="performance-flowchart">
+            <div className="flowchart-step up">
+              <div className="flowchart-icon"><FaSearch /></div>
+              <div className="flowchart-step-label">Step 1</div>
+              <div className="flowchart-step-title">Free Digital Marketing Audit</div>
+            </div>
+            <div className="flowchart-connector"></div>
+            <div className="flowchart-step down">
+              <div className="flowchart-icon"><FaLightbulb /></div>
+              <div className="flowchart-step-label">Step 2</div>
+              <div className="flowchart-step-title">Customized Strategy Planning</div>
+            </div>
+            <div className="flowchart-connector"></div>
+            <div className="flowchart-step up">
+              <div className="flowchart-icon"><FaRocket /></div>
+              <div className="flowchart-step-label">Step 3</div>
+              <div className="flowchart-step-title">Launch Campaign with Full Support</div>
+            </div>
+            <div className="flowchart-connector"></div>
+            <div className="flowchart-step down">
+              <div className="flowchart-icon"><FaChartLine /></div>
+              <div className="flowchart-step-label">Step 4</div>
+              <div className="flowchart-step-title">Weekly Optimization & Reporting</div>
+            </div>
+          </div>
+          <div className="performance-flowchart-contact">
+            <span className="contact-bold">Contact us today</span> to discuss your project and get a custom quote.
           </div>
         </div>
       </div>

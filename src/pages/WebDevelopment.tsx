@@ -7,7 +7,7 @@ const webDevPackages: PricingPackage[] = [
   {
     name: 'GOLD',
     price: '11,999',
-    usdPrice: '250',
+    usdPrice: '$ 250',
     features: [
       'Responsive Design',
       'Up to 5 Pages',
@@ -23,7 +23,7 @@ const webDevPackages: PricingPackage[] = [
   {
     name: 'PLATINUM',
     price: '25,999',
-    usdPrice: '500',
+    usdPrice: '$ 500',
     features: [
       'All Features of Basic +',
       'Up to 10 Pages',
@@ -42,7 +42,7 @@ const webDevPackages: PricingPackage[] = [
   {
     name: 'DIAMOND',
     price: '45,999',
-    usdPrice: '750',
+    usdPrice: '$ 750',
     features: [
       'All Features of Standard +',
       'Unlimited Pages',

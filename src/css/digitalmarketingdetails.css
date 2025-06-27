@@ -41,4 +41,352 @@
     font-size: 1rem;
     padding: 0.85rem 1rem 0.85rem 1.2rem;
   }
+}
+
+/* --- Digital Marketing Results Section Styles --- */
+.dm-results-section {
+  padding: 4rem 0;
+}
+
+.dm-results-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.dm-results-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
+  font-size: 1rem;
+}
+
+.dm-results-table th, .dm-results-table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+
+.dm-results-table th {
+  background: #eaf1ff;
+  color: #2563EB;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-bottom: 2px solid #d1e0fa;
+}
+
+.dm-results-table td {
+  color: #1A1A1A;
+  border-bottom: 1px solid #f0f4fa;
+  font-weight: 500;
+}
+
+.dm-results-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dm-results-samplework {
+  margin-top: 1.5rem;
+}
+
+.dm-results-samplework h4 {
+  color: #2563EB;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dm-results-sample-list {
+  list-style: disc inside;
+  color: #2563EB;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+.dm-results-sample-list li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .dm-results-section {
+    padding: 1.5rem 0 1rem 0;
+    border-radius: 1rem;
+  }
+  .dm-results-table th, .dm-results-table td {
+    padding: 0.7rem 0.7rem;
+    font-size: 0.97rem;
+  }
+  .dm-results-sample-list {
+    font-size: 0.97rem;
+  }
+}
+
+/* --- Performance Marketing Steps Section Styles --- */
+.performance-marketing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8FAFF;
+  padding: 2.5rem 0;
+}
+
+.performance-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.performance-title {
+  color: #2563EB;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.performance-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.performance-steps li {
+  font-size: 1.18rem;
+  margin-bottom: 0.7rem;
+  color: #1741a6;
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+}
+
+.step-label {
+  font-weight: 800;
+  color: #2563EB;
+  margin-right: 0.5rem;
+  font-size: 1.18rem;
+}
+
+.performance-contact {
+  font-size: 1.13rem;
+  color: #1741a6;
+  margin-top: 1.2rem;
+}
+
+.contact-bold {
+  font-weight: 800;
+  color: #2563EB;
+}
+
+.performance-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, #2563EB22 60%, transparent 100%);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .performance-card {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .performance-title {
+    font-size: 1.25rem;
+  }
+  .performance-steps li, .step-label {
+    font-size: 1rem;
+  }
+  .performance-contact {
+    font-size: 1rem;
+  }
+}
+
+/* --- Performance Marketing Flowchart Section Styles --- */
+.performance-flowchart-section {
+  background-color: #F8FAFF;
+  padding: 4rem 0;
+}
+
+.performance-flowchart-title {
+  color: #2563EB;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.performance-flowchart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.flowchart-step {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.10);
+  padding: 2.2rem 1.5rem 1.2rem 1.5rem;
+  min-width: 180px;
+  max-width: 210px;
+  margin: 0 0.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.flowchart-step.up {
+  top: -30px;
+}
+.flowchart-step.down {
+  top: 30px;
+}
+
+.flowchart-step:hover {
+  transform: scale(1.07) translateY(-6px);
+  box-shadow: 0 8px 32px rgba(37, 99, 235, 0.18);
+  border: 2px solid #2563EB;
+}
+
+.flowchart-icon {
+  background: #eaf1ff;
+  color: #2563EB;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.1rem;
+  margin-top: -0.5rem;
+  box-shadow: 0 4px 18px 0 #2563eb22, 0 1.5px 8px rgba(37,99,235,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+
+.flowchart-step:hover .flowchart-icon {
+  background: #2563EB;
+  color: #fff;
+}
+
+.flowchart-step-label {
+  font-weight: 700;
+  color: #1D4ED8;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.flowchart-step-title {
+  font-size: 1.08rem;
+  color: #1741a6;
+  font-weight: 500;
+}
+
+.flowchart-connector {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowchart-connector::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px dashed #2563EB;
+  border-radius: 0 0 60px 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.performance-flowchart-contact {
+  font-size: 1.13rem;
+  color: #1741a6;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.contact-bold {
+  font-weight: 800;
+  color: #2563EB;
+}
+
+@media (max-width: 900px) {
+  .performance-flowchart {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .flowchart-step.up, .flowchart-step.down {
+    top: 0;
+  }
+  .flowchart-connector {
+    width: 4px;
+    height: 40px;
+    border-bottom: none;
+    border-right: 3px dashed #2563EB;
+    border-radius: 0 0 30px 30px;
+    margin: 0.5rem 0;
+    align-self: center;
+    position: relative;
+  }
+  .flowchart-connector::before {
+    width: 100%;
+    height: 100%;
+    border-bottom: none;
+    border-right: 3px dashed #2563EB;
+    border-radius: 0 0 30px 30px;
+    left: 0;
+    top: 0;
+  }
+  .flowchart-step {
+    margin: 0.5rem 0;
+    min-width: 180px;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .performance-flowchart-title {
+    font-size: 1.2rem;
+  }
+  .flowchart-step-title {
+    font-size: 0.97rem;
+  }
+  .flowchart-step-label {
+    font-size: 0.95rem;
+  }
+  .flowchart-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
 } 

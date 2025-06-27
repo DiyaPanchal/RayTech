@@ -12,13 +12,15 @@ export interface PricingPackage {
 
 interface PricingProps {
   packages: PricingPackage[];
+  heading?: string;
+  note?: string;
 }
 
-const Pricing = ({ packages }: PricingProps) => {
+const Pricing = ({ packages, heading = 'Packages', note = 'Final pricing may vary depending on specific client requirements.' }: PricingProps) => {
   return (
     <section className="pricing-section">
       <div className="custom-container">
-        <h2 className="section-title"> Packages</h2>
+        <h2 className="section-title">{heading}</h2>
         <p className="section-subtitle">We offer tailored pricing to meet varying business needs:</p>
         
         <div className="row g-4 justify-content-center">
@@ -33,7 +35,7 @@ const Pricing = ({ packages }: PricingProps) => {
                   <div className="price">
                     <span className="currency">₹</span>
                     <span className="amount">{pkg.price}</span>
-                    <span className="usd-price">$ {pkg.usdPrice}</span>
+                    <span className="usd-price">{pkg.usdPrice}</span>
                   </div>
                 </div>
                 <ul className="features-list">
@@ -47,7 +49,7 @@ const Pricing = ({ packages }: PricingProps) => {
           ))}
         </div>
 
-        <p className="pricing-note">Note: Final pricing may vary depending on specific client requirements.</p>
+        <p className="pricing-note">Note: {note}</p>
       </div>
     </section>
   );
