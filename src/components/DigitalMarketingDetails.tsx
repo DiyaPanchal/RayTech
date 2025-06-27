@@ -34,19 +34,6 @@ const DigitalMarketingDetails = () => {
     }
   ];
 
-  // Placeholder services for digital marketing
-  const services = [
-    'Social Media Marketing',
-    'Search Engine Marketing (SEM)',
-    'Content Marketing',
-    'Email Campaigns',
-    'Influencer Marketing',
-    'Analytics & Reporting',
-    'Online Reputation Management',
-    'Conversion Rate Optimization'
-  ];
-
-  // Core services data structured for grouped display
   const coreServices = [
     {
       title: 'Social Media Marketing',

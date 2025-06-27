@@ -1,6 +1,6 @@
 import '../css/erpdetails.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaCogs, FaCloud, FaUsers, FaChartBar, FaLock, FaDatabase, FaEye, FaMoneyBillWave, FaRocket, FaChartLine, FaUserTie, FaBuilding, FaHandshake, FaBoxes, FaFileInvoiceDollar, FaTruck, FaIndustry, FaSchool } from 'react-icons/fa';
+import { FaDatabase, FaMoneyBillWave, FaRocket, FaChartLine } from 'react-icons/fa';
 import { LuUserCog, LuBuilding2, LuHandshake, LuBoxes, LuFileText, LuTruck, LuFactory, LuBookOpen } from 'react-icons/lu';
 import KeyBenefits from './KeyBenefits';
 
@@ -29,34 +29,6 @@ const erpBenefits = [
     icon: <FaChartLine />,
     title: 'Increased Productivity',
     description: 'Empower your teams to work more efficiently and collaboratively, boosting overall productivity.'
-  }
-];
-
-const erpTechStack = [
-  {
-    category: 'Core Technologies',
-    icons: [
-      { name: 'NodeJS', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-      { name: 'React', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-      { name: 'MySQL', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-      { name: 'Firebase', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' }
-    ],
-    items: ['NodeJS', 'ReactJS', 'MySQL', 'Firebase']
-  },
-  {
-    category: 'Integrations',
-    icons: [
-      { name: 'REST API', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-      { name: 'Cloud', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' }
-    ],
-    items: ['REST APIs', 'Cloud Services', 'Third-Party Integrations']
-  },
-  {
-    category: 'Security',
-    icons: [
-      { name: 'Security', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' }
-    ],
-    items: ['Role-Based Access', 'Data Encryption', 'Audit Logs']
   }
 ];
 

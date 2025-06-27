@@ -3,7 +3,6 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import {
   FaCheckCircle,
   FaUsers,
-  FaChartLine,
   FaComments,
   FaTrophy,
   FaRocket,

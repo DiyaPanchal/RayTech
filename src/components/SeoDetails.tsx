@@ -1,7 +1,7 @@
 import '../css/seoDetails.css';
 import '../css/servicecommon.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaChartLine, FaBullseye, FaRocket, FaMapMarkerAlt, FaShoppingBag, FaTooth, FaGraduationCap, FaBuilding, FaHotel, FaAppleAlt, FaUsers, FaCogs, FaTag, FaLink } from 'react-icons/fa';
+import { FaChartLine, FaBullseye, FaRocket, FaMapMarkerAlt, FaShoppingBag, FaTooth, FaGraduationCap, FaBuilding, FaHotel, FaAppleAlt, FaCogs, FaTag, FaLink } from 'react-icons/fa';
 import KeyBenefits from './KeyBenefits';
 
 const SeoDetails = () => {
@@ -79,18 +79,6 @@ const SeoDetails = () => {
         'Reviews and reputation management',
       ],
     },
-  ];
-
-  // Industry Focus (from image)
-  const targetAudience = [
-    'E-commerce',
-    'Healthcare',
-    'Education',
-    'Real Estate',
-    'Hospitality',
-    'FMCG',
-    'Startups',
-    'and more',
   ];
 
   return (

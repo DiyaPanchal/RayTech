@@ -1,7 +1,7 @@
 import '../css/webdetails.css';
 import '../css/servicecommon.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaCheckCircle, FaUsers, FaChartLine, FaComments, FaTrophy } from 'react-icons/fa';
+import { FaCheckCircle, FaUsers, FaChartLine, FaTrophy } from 'react-icons/fa';
 import KeyBenefits from './KeyBenefits';
 
 const WebDetails = () => {
