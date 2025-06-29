@@ -60,7 +60,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="custom-container">
-        <h2 className="section-title">Contact Us</h2>
+        <h2 className="section-title mb-5">Contact Us</h2>
         
         <div className="row g-4 justify-content-between">
           <div className="col-lg-6">
@@ -109,7 +109,7 @@ export default function Contact() {
                 className="btn btn-primary"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending.." : "Send"}
               </button>
             </form>
           </div>

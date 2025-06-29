@@ -51,6 +51,8 @@
 .dm-results-table-wrapper {
   overflow-x: auto;
   margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
 }
 
 .dm-results-table {
@@ -60,8 +62,8 @@
   background: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(37,99,235,0.06);
   font-size: 1rem;
+  min-width: 600px; /* Ensure table doesn't get too cramped */
 }
 
 .dm-results-table th, .dm-results-table td {
@@ -75,6 +77,7 @@
   font-weight: 700;
   font-size: 1.05rem;
   border-bottom: 2px solid #d1e0fa;
+  white-space: nowrap;
 }
 
 .dm-results-table td {
@@ -388,5 +391,399 @@
     width: 40px;
     height: 40px;
     font-size: 1.3rem;
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .dm-results-section {
+    padding: 3rem 0;
+  }
+  
+  .performance-flowchart-section {
+    padding: 3rem 0;
+  }
+  
+  .performance-flowchart {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+  .dm-results-section {
+    padding: 2.5rem 0;
+  }
+  
+  .dm-results-table-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  .dm-results-table {
+    min-width: 500px;
+  }
+  
+  .dm-results-table th, .dm-results-table td {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .dm-results-samplework h4 {
+    font-size: 1rem;
+  }
+  
+  .dm-results-sample-list {
+    font-size: 0.95rem;
+  }
+  
+  .performance-flowchart-section {
+    padding: 2.5rem 0;
+  }
+  
+  .performance-flowchart-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .performance-flowchart {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .dm-service-list li {
+    font-size: 1rem;
+    padding: 0.85rem 1rem 0.85rem 1.2rem;
+  }
+  
+  .dm-results-section {
+    padding: 1.5rem 0 1rem 0;
+  }
+  
+  .dm-results-table-wrapper {
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+  }
+  
+  .dm-results-table {
+    min-width: 400px;
+    font-size: 0.9rem;
+  }
+  
+  .dm-results-table th, .dm-results-table td {
+    padding: 0.7rem 0.7rem;
+    font-size: 0.9rem;
+  }
+  
+  .dm-results-table th {
+    font-size: 0.95rem;
+  }
+  
+  .dm-results-samplework {
+    margin-top: 1rem;
+  }
+  
+  .dm-results-samplework h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .dm-results-sample-list {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  
+  .dm-results-sample-list li {
+    margin-bottom: 0.4rem;
+  }
+  
+  .performance-card {
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
+    margin: 0 0.5rem;
+  }
+  
+  .performance-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .performance-steps li, .step-label {
+    font-size: 1rem;
+  }
+  
+  .performance-contact {
+    font-size: 1rem;
+  }
+  
+  .performance-flowchart-section {
+    padding: 2rem 0;
+  }
+  
+  .performance-flowchart-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .performance-flowchart {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .flowchart-step.up, .flowchart-step.down {
+    top: 0;
+  }
+  
+  .flowchart-connector {
+    width: 4px;
+    height: 40px;
+    border-bottom: none;
+    border-right: 3px dashed #2563EB;
+    border-radius: 0 0 30px 30px;
+    margin: 0.5rem 0;
+    align-self: center;
+    position: relative;
+  }
+  
+  .flowchart-connector::before {
+    width: 100%;
+    height: 100%;
+    border-bottom: none;
+    border-right: 3px dashed #2563EB;
+    border-radius: 0 0 30px 30px;
+    left: 0;
+    top: 0;
+  }
+  
+  .flowchart-step {
+    margin: 0.5rem 0;
+    min-width: 180px;
+    max-width: 95vw;
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  
+  .flowchart-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .flowchart-step-label {
+    font-size: 0.95rem;
+  }
+  
+  .flowchart-step-title {
+    font-size: 0.95rem;
+  }
+  
+  .performance-flowchart-contact {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .dm-service-list li {
+    font-size: 0.95rem;
+    padding: 0.75rem 0.9rem 0.75rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .dm-results-section {
+    padding: 1rem 0 0.5rem 0;
+  }
+  
+  .dm-results-table-wrapper {
+    margin-bottom: 0.75rem;
+  }
+  
+  .dm-results-table {
+    min-width: 350px;
+    font-size: 0.85rem;
+  }
+  
+  .dm-results-table th, .dm-results-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.85rem;
+  }
+  
+  .dm-results-table th {
+    font-size: 0.9rem;
+  }
+  
+  .dm-results-samplework {
+    margin-top: 0.75rem;
+  }
+  
+  .dm-results-samplework h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dm-results-sample-list {
+    font-size: 0.85rem;
+    margin-left: 0.75rem;
+  }
+  
+  .dm-results-sample-list li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .performance-card {
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+    border-radius: 1rem;
+  }
+  
+  .performance-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .performance-steps li, .step-label {
+    font-size: 0.95rem;
+  }
+  
+  .performance-contact {
+    font-size: 0.95rem;
+  }
+  
+  .performance-flowchart-section {
+    padding: 1.5rem 0;
+  }
+  
+  .performance-flowchart-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .performance-flowchart {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .flowchart-step {
+    min-width: 160px;
+    max-width: 98vw;
+    padding: 1.2rem 0.8rem 0.8rem 0.8rem;
+    border-radius: 1rem;
+  }
+  
+  .flowchart-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .flowchart-step-label {
+    font-size: 0.9rem;
+  }
+  
+  .flowchart-step-title {
+    font-size: 0.9rem;
+  }
+  
+  .flowchart-connector {
+    height: 30px;
+  }
+  
+  .performance-flowchart-contact {
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .dm-results-table {
+    min-width: 300px;
+    font-size: 0.8rem;
+  }
+  
+  .dm-results-table th, .dm-results-table td {
+    padding: 0.5rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  
+  .dm-results-table th {
+    font-size: 0.85rem;
+  }
+  
+  .flowchart-step {
+    min-width: 140px;
+    padding: 1rem 0.6rem 0.6rem 0.6rem;
+  }
+  
+  .flowchart-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .flowchart-step-label {
+    font-size: 0.85rem;
+  }
+  
+  .flowchart-step-title {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .performance-flowchart {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .flowchart-step {
+    margin: 0.5rem;
+    min-width: 150px;
+    max-width: 200px;
+  }
+  
+  .flowchart-connector {
+    display: none;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .dm-service-list li {
+    border-left-width: 3px;
+  }
+  
+  .dm-results-table {
+    border-radius: 0.75rem;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .dm-service-list li,
+  .flowchart-step,
+  .performance-card {
+    transition: none;
+  }
+  
+  .flowchart-step:hover {
+    transform: none;
+  }
+  
+  .dm-service-list li:hover {
+    transform: none;
   }
 } 

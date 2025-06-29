@@ -149,9 +149,31 @@
   font-style: italic;
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .pricing-section {
+    padding: 0.5rem 0 3.5rem 0;
+  }
+  
+  .pricing-card {
+    padding: 2.2rem 1.8rem;
+  }
+  
+  .amount {
+    font-size: 2.3rem;
+  }
+  
+  .currency {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablets */
 @media (max-width: 991px) {
   .pricing-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .pricing-card.featured {
@@ -163,18 +185,38 @@
     border: 2px solid #2563EB;
   }
 
- .pricing-section .section-title {
+  .pricing-section .section-title {
     font-size: 2rem;
   }
 
   .amount {
     font-size: 2.2rem;
   }
+  
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .package-name {
+    font-size: 1.4rem;
+  }
+  
+  .features-list li {
+    font-size: 0.93rem;
+    margin-bottom: 0.9rem;
+  }
+  
+  .pricing-header {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.8rem;
+  }
 }
 
+/* Mobile devices */
 @media (max-width: 768px) {
   .pricing-card {
     margin-bottom: 2rem;
+    padding: 1.8rem 1.2rem;
   }
 
   .pricing-card.featured {
@@ -194,35 +236,98 @@
     font-size: 1rem;
     margin-bottom: 2rem;
   }
-}
 
-@media (max-width: 576px) {
-  .pricing-section {
-    padding: 3rem 0;
+  .popular-badge {
+    top: 27px;
+    right: -30px;
+    padding: 6px 40px;
+    font-size: 0.75rem;
   }
   
-  .pricing-card {
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+  .package-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
   }
   
   .amount {
     font-size: 2rem;
   }
   
+  .currency {
+    font-size: 1.3rem;
+  }
+  
+  .usd-price {
+    font-size: 0.9rem;
+    margin-left: 0.4rem;
+  }
+  
   .features-list li {
     font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    gap: 0.6rem;
+  }
+  
+  .check-icon {
+    font-size: 0.9rem;
+  }
+  
+  .pricing-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .pricing-note {
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .pricing-section {
+    padding: 1rem 0 2rem 0;
+  }
+  
+  .pricing-card {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  .amount {
+    font-size: 1.8rem;
+  }
+  
+  .currency {
+    font-size: 1.2rem;
+  }
+  
+  .features-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    gap: 0.5rem;
+  }
+  
+  .check-icon {
+    font-size: 0.85rem;
   }
 
   .pricing-section .section-title {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
   }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
 
   .popular-badge {
-    padding: 6px 50px;
-    font-size: 0.8rem;
-    right: -60px;
+    top: 25px;
+    right: -36px;
+    padding: 4px 28px;
+    font-size: 0.7rem;
   }
 
   .price {
@@ -232,5 +337,128 @@
 
   .usd-price {
     margin-left: 0.25rem;
+    font-size: 0.85rem;
+  }
+  
+  .package-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .pricing-header {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  .pricing-note {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 0.5rem 0 1.5rem 0;
+  }
+  
+  .pricing-card {
+    padding: 1.2rem 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+  }
+  
+  .amount {
+    font-size: 1.6rem;
+  }
+  
+  .currency {
+    font-size: 1.1rem;
+  }
+  
+  .features-list li {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+    gap: 0.4rem;
+  }
+  
+  .check-icon {
+    font-size: 0.8rem;
+  }
+  
+  .pricing-section .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .package-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .usd-price {
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+  }
+  
+  .pricing-header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .pricing-note {
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  .popular-badge {
+    top: 22px;
+    right: -32px;
+    padding: 3px 24px;
+    font-size: 0.65rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .pricing-section {
+    padding: 1.5rem 0 2.5rem 0;
+  }
+  
+  .pricing-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-note {
+    margin-top: 2rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .pricing-card {
+    border-width: 0.5px;
+  }
+  
+  .pricing-card:hover {
+    border-width: 1px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card,
+  .pricing-btn {
+    transition: none;
+  }
+  
+  .pricing-card:hover,
+  .pricing-btn:hover {
+    transform: none;
   }
 } 

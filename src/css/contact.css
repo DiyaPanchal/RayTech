@@ -85,19 +85,13 @@ textarea.form-control {
 }
 
 .contact-form .btn-primary {
-  width: 100%;
-  padding: 1rem !important;
-  font-weight: 600;
-  font-size: 1.1rem;
-  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%) !important;
-  border: none !important;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-  transition: all 0.3s ease;
-}
-
-.contact-form .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  max-width: 180px;
+  min-width: 100px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 0.8rem 1.2rem !important;
+  font-size: 1rem;
 }
 
 .contact-form .btn-primary:disabled {
@@ -198,24 +192,21 @@ textarea.form-control {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  opacity: 0;
-  animation: fadeInUp 0.5s ease-out 0.9s forwards;
   position: relative;
 }
 
 .map-container::before {
   content: '';
   position: absolute;
-  inset: 0;
-  border: 2px solid transparent;
-  border-radius: 12px;
-  background: linear-gradient(45deg, #2563EB, transparent) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(37, 99, 235, 0.1), transparent);
   opacity: 0;
   transition: all 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .map-container:hover::before {
@@ -224,15 +215,15 @@ textarea.form-control {
 
 .map-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .map-container iframe {
-  display: block;
   width: 100%;
   height: 250px;
-  border: none;
+  border: 0;
   border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 @keyframes slideInLeft {
@@ -268,46 +259,249 @@ textarea.form-control {
   }
 }
 
-@media (max-width: 991px) {
+/* Tablet Responsive */
+@media (max-width: 1024px) {
   .contact-section {
     padding: 3rem 0;
   }
 
   .contact-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .contact-info {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-section {
-    padding: 3rem 0;
-  }
-
-  .contact-section .section-title {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     margin-bottom: 2.5rem;
   }
 
   .contact-form,
   .contact-info {
-    padding: 1.5rem;
+    padding: 2.25rem;
+  }
+
+  .contact-item {
+    padding: 1.125rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .icon-wrapper {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-icon {
+    font-size: 1.4rem;
+  }
+
+  .contact-details h3 {
+    font-size: 1.05rem;
+  }
+
+  .contact-details p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2.5rem 0;
+  }
+
+  .contact-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .contact-item {
     padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .icon-wrapper {
     width: 40px;
     height: 40px;
+    margin-right: 0.875rem;
   }
 
   .contact-icon {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+  }
+
+  .contact-details h3 {
+    font-size: 1rem;
+  }
+
+  .contact-details p {
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    margin-top: 1.5rem;
+  }
+
+  .map-container iframe {
+    height: 200px;
+  }
+
+  .form-control {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-form .btn-primary {
+    padding: 0.875rem !important;
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 2rem 0;
+  }
+
+  .contact-section .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-item {
+    padding: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .icon-wrapper {
+    width: 38px;
+    height: 38px;
+    margin-right: 0.75rem;
+  }
+
+  .contact-icon {
+    font-size: 1.2rem;
+  }
+
+  .contact-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .contact-details p {
+    font-size: 0.85rem;
+  }
+
+  .map-container {
+    margin-top: 1.25rem;
+  }
+
+  .map-container iframe {
+    height: 180px;
+  }
+
+  .form-control {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-form .btn-primary {
+    max-width: 120px;
+    padding: 0.6rem 0.7rem !important;
+    font-size: 0.95rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile Responsive */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 1.5rem 0;
+  }
+
+  .contact-section .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 1.25rem;
+  }
+
+  .contact-item {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .icon-wrapper {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.625rem;
+  }
+
+  .contact-icon {
+    font-size: 1.1rem;
+  }
+
+  .contact-details h3 {
+    font-size: 0.9rem;
+  }
+
+  .contact-details p {
+    font-size: 0.8rem;
+  }
+
+  .map-container iframe {
+    height: 160px;
+  }
+
+  .form-control {
+    padding: 0.65rem 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-form .btn-primary {
+    padding: 0.75rem !important;
+    font-size: 0.9rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .contact-form:hover {
+    transform: none;
+  }
+
+  .contact-item:hover {
+    transform: none;
+  }
+
+  .contact-item:hover .icon-wrapper {
+    transform: none;
+  }
+
+  .contact-item:hover .contact-icon {
+    transform: none;
+  }
+
+  .map-container:hover {
+    transform: none;
+  }
+
+  .contact-form .btn-primary:hover {
+    transform: none;
   }
 } 

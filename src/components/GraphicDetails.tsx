@@ -93,14 +93,14 @@ const GraphicDetails = () => {
 
       {/* Key Benefits Section */}
       <div className="benefits-section">
-            <div className="custom-container">           
-      <div className="row justify-content-center">
-        <div className="">
-          <KeyBenefits
-            benefits={benefits}
-            title="Key Benefits"
-            subtitle="Discover how professional graphic design can transform your brand and drive business growth"
-          />
+        <div className="custom-container">           
+          <div className="row justify-content-center">
+            <div className="">
+              <KeyBenefits
+                benefits={benefits}
+                title="Key Benefits"
+                subtitle="Discover how professional graphic design can transform your brand and drive business growth"
+              />
         </div>
       </div>
  </div>

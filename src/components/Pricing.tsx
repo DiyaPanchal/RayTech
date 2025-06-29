@@ -48,7 +48,6 @@ const Pricing = ({ packages, heading = 'Packages', note = 'Final pricing may var
             </div>
           ))}
         </div>
-
         <p className="pricing-note">Note: {note}</p>
       </div>
     </section>

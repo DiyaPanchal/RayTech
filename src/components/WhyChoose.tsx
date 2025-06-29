@@ -30,7 +30,7 @@ export default function WhyChoose() {
   return (
     <section id="why-us" className="why-choose-section">
       <div className="custom-container">
-        <h2 className="section-title">Why Choose Ray Tech</h2>
+        <h2 className="section-title mb-5">Why Choose Ray Tech</h2>
         
         <div className="row g-4 justify-content-center">
           {reasons.map((reason, index) => (

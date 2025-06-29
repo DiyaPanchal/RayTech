@@ -102,9 +102,6 @@
 
 /* Responsive styles */
 @media (max-width: 991px) {
-  .graphic-why-section {
-    padding: 2rem 1rem;
-  }
   
   .benefit-card {
     padding: 1.5rem;
@@ -132,5 +129,139 @@
   .benefit-icon svg {
     width: 1.25rem;
     height: 1.25rem;
+  }
+}
+
+/* Animation Controls for Performance */
+@media (max-width: 768px) {
+  /* Disable complex animations on mobile */
+  .benefit-card {
+    transition: none;
+  }
+  
+  .benefit-card::before {
+    display: none;
+  }
+  
+  .benefit-card:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.05);
+    border-color: rgba(37, 99, 235, 0.1);
+  }
+  
+  .benefit-card:hover::before {
+    display: none;
+  }
+  
+  .benefit-card:hover .benefit-icon {
+    transform: none;
+    background: linear-gradient(135deg, #2563EB11 0%, #1D4ED811 100%);
+  }
+  
+  .benefit-card:hover .benefit-title {
+    background: linear-gradient(to right, #1A1A1A, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .benefit-icon {
+    transition: none;
+  }
+  
+  .benefit-icon svg {
+    transition: none;
+  }
+  
+  .benefit-card:hover .benefit-icon svg {
+    transform: none;
+    color: #2563EB;
+  }
+  
+  .benefit-content {
+    transition: none;
+  }
+  
+  .benefit-card:hover .benefit-content {
+    transform: none;
+  }
+  
+  .benefit-title {
+    transition: none;
+  }
+  
+  .benefit-description {
+    transition: none;
+  }
+  
+  .benefit-card:hover .benefit-description {
+    color: #4B5563 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Disable all animations on very small screens */
+  .benefit-card:hover {
+    background-color: rgba(37, 99, 235, 0.02);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .benefit-card {
+    transition: none !important;
+  }
+  
+  .benefit-card::before {
+    display: none !important;
+  }
+  
+  .benefit-card:hover {
+    transform: none !important;
+  }
+  
+  .benefit-card:hover::before {
+    display: none !important;
+  }
+  
+  .benefit-card:hover .benefit-icon {
+    transform: none !important;
+  }
+  
+  .benefit-card:hover .benefit-title {
+    background: linear-gradient(to right, #1A1A1A, #2563EB) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  
+  .benefit-icon {
+    transition: none !important;
+  }
+  
+  .benefit-icon svg {
+    transition: none !important;
+  }
+  
+  .benefit-card:hover .benefit-icon svg {
+    transform: none !important;
+  }
+  
+  .benefit-content {
+    transition: none !important;
+  }
+  
+  .benefit-card:hover .benefit-content {
+    transform: none !important;
+  }
+  
+  .benefit-title {
+    transition: none !important;
+  }
+  
+  .benefit-description {
+    transition: none !important;
+  }
+  
+  .benefit-card:hover .benefit-description {
+    color: #4B5563 !important;
   }
 } 

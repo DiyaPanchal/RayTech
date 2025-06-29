@@ -4,13 +4,17 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  z-index: 1;
 }
 
 /* Main content area that takes up remaining space */
 .layout > *:nth-child(2) {
   flex: 1;
   margin-top: 96px; /* Account for fixed navbar height */
-  min-height: calc(100vh - 80px - 400px); /* 100vh - navbar - footer (approximate) */
+  min-height: calc(100vh - 96px - 400px); /* 100vh - navbar - footer (approximate) */
 }
 
 /* Ensure proper spacing for different page containers */
@@ -20,38 +24,81 @@
   min-height: 100%;
 } */
 
-/* Responsive adjustments */
+/* Ensure footer stays at bottom */
+.layout > *:last-child {
+  margin-top: auto;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .layout > *:nth-child(2) {
+    margin-top: 88px;
+    min-height: calc(100vh - 88px - 380px);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  .layout > *:nth-child(2) {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px - 350px);
+  }
+}
+
 @media (max-width: 768px) {
   .layout > *:nth-child(2) {
-    margin-top: 70px; /* Slightly smaller navbar on mobile */
-    min-height: calc(100vh - 70px - 350px);
+    margin-top: 75px;
+    min-height: calc(100vh - 75px - 320px);
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 576px) {
+  .layout > *:nth-child(2) {
+    margin-top: 70px;
+    min-height: calc(100vh - 70px - 300px);
+  }
+}
+
+/* Extra Small Mobile Responsive */
+@media (max-width: 480px) {
+  .layout > *:nth-child(2) {
+    margin-top: 65px;
+    min-height: calc(100vh - 65px - 280px);
+  }
+}
+
+/* Add a utility class for main content offset */
+.main-content {
+  margin-top: 96px; /* Same as header height */
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    margin-top: 88px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 75px;
   }
 }
 
 @media (max-width: 576px) {
-  .layout > *:nth-child(2) {
-    margin-top: 65px; /* Even smaller navbar on very small screens */
-    min-height: calc(100vh - 65px - 300px);
+  .main-content {
+    margin-top: 70px;
   }
 }
 
-/* Ensure the layout takes full width */
-.layout {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-/* Smooth scrolling for the entire layout */
-.layout {
-  scroll-behavior: smooth;
-}
-
-/* Ensure proper stacking context */
-.layout {
-  z-index: 1;
-}
-
-/* Ensure footer stays at bottom */
-.layout > *:last-child {
-  margin-top: auto;
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: 65px;
+  }
 } 

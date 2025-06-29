@@ -149,7 +149,31 @@
   font-weight: 500;
 }
 
-@media (max-width: 991px) {
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 6rem 0;
+  }
+
+  .about-content {
+    padding-left: 1rem;
+  }
+
+  .about-title {
+    font-size: 2.25rem;
+  }
+
+  .about-content p {
+    font-size: 1.05rem;
+  }
+
+  .quote-container p {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
   .about-section {
     padding: 4rem 0;
   }
@@ -157,28 +181,27 @@
   .about-content {
     padding-left: 0;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .about-title {
     font-size: 2rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-section {
-    padding: 3rem 0;
+    margin-bottom: 1.5rem;
   }
 
-  .about-title {
-    font-size: 1.75rem;
+  .about-title::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .about-content p {
     font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .quote-container {
     padding: 1.25rem;
+    margin: 1.5rem 0;
   }
 
   .quote-container p {
@@ -187,10 +210,104 @@
 
   .feature-item {
     padding: 0.875rem;
+    margin-bottom: 0.75rem;
   }
 
   .feature-text {
     font-size: 1rem;
+  }
+
+  .about-image-wrapper {
+    transform: perspective(1000px) rotateY(0deg);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 576px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .quote-container {
+    padding: 1rem;
+    margin: 1.25rem 0;
+  }
+
+  .quote-container p {
+    font-size: 1rem;
+  }
+
+  .feature-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-icon {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+  }
+
+  .feature-text {
+    font-size: 0.95rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+}
+
+/* Extra Small Mobile Responsive */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2.5rem 0;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .quote-container p {
+    font-size: 0.95rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .about-image-wrapper:hover {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .about-image-wrapper:hover img {
+    transform: none;
+  }
+
+  .feature-item:hover {
+    transform: none;
+  }
+
+  .feature-item:hover .feature-icon {
+    transform: none;
   }
 }
   

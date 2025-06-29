@@ -108,16 +108,11 @@
   }
 }
 @media (max-width: 991px) {
-  .web-dev-section {
-    padding-top: 4rem !important;
-  }
-
   .section-heading-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
-  .intro-section {
-    margin: 2.5rem 0 4rem;
+  .intro-section {   
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -135,11 +130,19 @@
   .intro-animation > div {
     min-height: 350px;
   }
+  
+  .benefits-section {
+    padding: 3rem 0;
+  }
+
+  .web-dev-herosection {
+    padding: 2rem 0;
+  }
 }
 
 @media (max-width: 576px) {
   .web-dev-herosection {
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
   .intro-text {
     font-size: 1rem;
@@ -147,6 +150,10 @@
   }
   .intro-animation {
     margin-top: 0.5rem;
+  }
+  
+  .benefits-section {
+    padding: 2rem 0;
   }
 }
 
@@ -304,7 +311,6 @@
     padding: 1.5rem;
   }
 }
-
 /* --- CORE SERVICES SECTION (moved from graphicdetails.css for reuse) --- */
 .core-services-section{
   padding: 4rem 0;
@@ -400,5 +406,164 @@
 @media (max-width: 576px) {
   .services-showcase {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Animation Controls for Performance */
+@media (max-width: 768px) {
+  /* Disable complex animations on mobile */
+  .intro-animation {
+    display: none; /* Hide animation on mobile for better performance */
+  }
+  
+  .audience-item {
+    transition: none;
+  }
+  
+  .audience-item:hover {
+    transform: none;
+  }
+  
+  .audience-icon {
+    transition: none;
+  }
+  
+  .audience-item:hover .audience-icon {
+    transform: none;
+    background: linear-gradient(135deg, #2563EB11 0%, #1D4ED811 100%);
+  }
+  
+  .audience-icon svg {
+    transition: none;
+  }
+  
+  .audience-item:hover .audience-icon svg {
+    color: #2563EB;
+  }
+  
+  .audience-item h4 {
+    transition: none;
+  }
+  
+  .audience-line {
+    transition: none;
+  }
+  
+  .audience-item:hover .audience-line {
+    width: 40px;
+  }
+  
+  .service-item {
+    transition: none;
+  }
+  
+  .service-item:hover {
+    transform: none;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.05);
+  }
+  
+  .service-content h4 {
+    transition: none;
+  }
+  
+  .service-content p {
+    transition: none;
+  }
+  
+  .service-decoration {
+    transition: none;
+  }
+  
+  .service-item:hover .service-decoration {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2563EB11 0%, #1D4ED811 100%);
+  }
+  
+  .service-item:hover .service-content h4 {
+    color: #1A1A1A;
+  }
+  
+  .service-item:hover .service-content p {
+    color: #4B5563;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Disable all animations on very small screens */
+  .audience-item:hover {
+    background-color: rgba(37, 99, 235, 0.02);
+  }
+  
+  .service-item:hover {
+    background-color: rgba(37, 99, 235, 0.02);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .intro-animation {
+    display: none;
+  }
+  
+  .audience-item {
+    transition: none !important;
+  }
+  
+  .audience-item:hover {
+    transform: none !important;
+  }
+  
+  .audience-icon {
+    transition: none !important;
+  }
+  
+  .audience-item:hover .audience-icon {
+    transform: none !important;
+  }
+  
+  .audience-icon svg {
+    transition: none !important;
+  }
+  
+  .audience-line {
+    transition: none !important;
+  }
+  
+  .audience-item:hover .audience-line {
+    width: 40px !important;
+  }
+  
+  .service-item {
+    transition: none !important;
+  }
+  
+  .service-item:hover {
+    transform: none !important;
+  }
+  
+  .service-content h4 {
+    transition: none !important;
+  }
+  
+  .service-content p {
+    transition: none !important;
+  }
+  
+  .service-decoration {
+    transition: none !important;
+  }
+  
+  .service-item:hover .service-decoration {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .service-item:hover .service-content h4 {
+    color: #1A1A1A !important;
+  }
+  
+  .service-item:hover .service-content p {
+    color: #4B5563 !important;
   }
 }

@@ -82,7 +82,7 @@ export default function Services() {
   return (
     <section id="services" className="services-section">
       <div className="custom-container">
-        <h2 className="section-title">Our Services</h2>
+        <h2 className="section-title mb-5">Our Services</h2>
         
         <div className="row g-4">
           {services.map((service, index) => (

@@ -122,8 +122,8 @@
 }
 
 .tech-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -170,29 +170,43 @@
   opacity: 1;
 }
 
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .tech-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .web-dev-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
 
 @media (max-width: 991px) {
-  .web-dev-section {
-    padding-top: 4rem !important;
-  }
-
   .section-heading-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .technical-section {
     padding: 3rem 1rem;
   }
+  
+  .web-dev-services-section {
+    padding: 3rem 0;
+  }
+  
+  .tech-category {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
   .tech-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .web-dev-services-grid {
     grid-template-columns: 1fr;
   }
 
@@ -206,6 +220,7 @@
   }
 
   .tech-items {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0.75rem;
   }
@@ -215,13 +230,28 @@
     font-size: 0.85rem;
     min-height: 40px;
   }
+  
+  .web-dev-service-item {
+    padding: 1.5rem;
+  }
+  
+  .tech-title {
+    font-size: 1.2rem;
+  }
+  
+  .tech-icons {
+    gap: 1rem;
+  }
+  
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
 }
 
 @media (max-width: 576px) {
-  .web-dev-section {
-    padding-top: 3rem !important;
-  }
-
+ 
   .tech-icon {
     width: 35px;
     height: 35px;
@@ -237,5 +267,160 @@
     padding: 0.625rem 0.875rem;
     font-size: 0.85rem;
     min-height: 40px;
+  }
+  
+  .web-dev-service-item {
+    padding: 1.25rem;
+  }
+  
+  
+  .tech-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-category {
+    padding: 1.25rem;
+  }
+  
+  .section-heading-wrapper {
+    margin-bottom: 2rem;
+  }
+  
+  .technical-section {
+    padding: 2rem 0;
+  }
+  
+  .web-dev-services-section {
+    padding: 2rem 0;
+  }
+}
+
+/* Animation Controls for Performance */
+@media (max-width: 768px) {
+  /* Disable complex animations on mobile */
+  .tech-category {
+    transition: none;
+  }
+  
+  .tech-category:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.05);
+  }
+  
+  .tech-category::before {
+    display: none;
+  }
+  
+  .tech-category:hover::before {
+    display: none;
+  }
+  
+  .tech-title::after {
+    display: none;
+  }
+  
+  .tech-category:hover .tech-title::after {
+    display: none;
+  }
+  
+  .tech-icon {
+    transition: none;
+  }
+  
+  .tech-icon:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.05);
+  }
+  
+  .tech-icon img {
+    transition: none;
+  }
+  
+  .tech-icon:hover img {
+    transform: none;
+  }
+  
+  .tech-item {
+    transition: none;
+  }
+  
+  .tech-item::before {
+    display: none;
+  }
+  
+  .tech-item:hover {
+    transform: none;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+  }
+  
+  .tech-item:hover::before {
+    display: none;
+  }
+  
+  .web-dev-service-item {
+    transition: none;
+  }
+  
+  .web-dev-service-item::before {
+    display: none;
+  }
+  
+  .web-dev-service-item:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.05);
+  }
+  
+  .web-dev-service-item:hover::before {
+    display: none;
+  }
+  
+  .web-dev-service-text {
+    transition: none;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Disable all animations on very small screens */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  /* Keep only essential hover states for accessibility */
+  .tech-category:hover {
+    background-color: rgba(37, 99, 235, 0.02);
+  }
+  
+  .tech-item:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+  }
+  
+  .web-dev-service-item:hover {
+    background-color: rgba(37, 99, 235, 0.02);
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .tech-category:hover {
+    transform: none !important;
+  }
+  
+  .tech-icon:hover {
+    transform: none !important;
+  }
+  
+  .tech-item:hover {
+    transform: none !important;
+  }
+  
+  .web-dev-service-item:hover {
+    transform: none !important;
   }
 } 

@@ -95,10 +95,10 @@ const WebDetails = () => {
 
   return (
     <div className="web-dev-section">  
-<div className="web-dev-herosection">
-          <div className="custom-container">
+      <div className="web-dev-herosection">
+        <div className="custom-container">
           <div className="section-heading-wrapper">
-            <h1 className="main-title">Web Design & Development</h1>
+            <h1 className="main-title">Web Development</h1>
           </div>
           
           <div className="intro-section">
@@ -121,13 +121,13 @@ const WebDetails = () => {
                 loop
                 autoplay
               />
+            </div>
           </div>
         </div>
       </div>
-        </div>
 
-        <div className="benefits-section">
-            <div className="custom-container">
+      <div className="benefits-section">
+        <div className="custom-container">
           <div className="row justify-content-center">
             <div className="">
               <KeyBenefits 
@@ -140,10 +140,10 @@ const WebDetails = () => {
           <div className="section-dots dots-top-right"></div>
           <div className="section-dots dots-bottom-left"></div>
         </div>
-            </div>
+      </div>
 
-        <div className="technical-section">
-          <div className="custom-container">
+      <div className="technical-section">
+        <div className="custom-container">
           <div className="section-heading-wrapper">
             <h2 className="section-title">Our Tech Stack</h2>
             <p className="byline">Powered by cutting-edge technologies and frameworks to deliver robust, scalable solutions</p>
@@ -169,10 +169,10 @@ const WebDetails = () => {
             ))}
           </div>
         </div>
-          </div>
+      </div>
 
-        <div className="web-dev-services-section">
-          <div className="custom-container">
+      <div className="web-dev-services-section">
+        <div className="custom-container">
           <div className="section-heading-wrapper">
             <h2 className="section-title">Core Services</h2>
             <p className="byline">Comprehensive web development solutions tailored to your specific needs and industry requirements</p>
@@ -187,8 +187,7 @@ const WebDetails = () => {
           <div className="section-dots dots-bottom-left"></div>
         </div>
       </div>
-          </div>
-    
+    </div>
   );
 };
 

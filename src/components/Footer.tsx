@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="footer-brand">
             <img src={logoWithTagline} alt="Ray Tech - Where Innovation Meets Success" className="footer-logo-with-tagline" />
             <p className="company-description">
-              Ray Tech is a leading IT & Digital Services company founded in 2024. 
+              Ray Tech is a leading IT & Digital Services company founded in 2025. 
               We specialize in delivering innovative digital solutions that drive business success.
             </p>
           </div>

@@ -116,28 +116,166 @@
   transform: scale(1.2);
 }
 
-@media (max-width: 991px) {
+/* Tablet Responsive */
+@media (max-width: 1024px) {
   .services-section {
     padding: 4rem 0;
   }
   
- .services-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  .services-section .section-title {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .service-card {
+    padding: 1.75rem;
+  }
+
+  .service-title {
+    font-size: 1.4rem;
+  }
+
+  .service-list li {
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 576px) {
+/* Mobile Responsive */
+@media (max-width: 768px) {
   .services-section {
     padding: 3rem 0;
   }
   
   .services-section .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
   
   .service-card {
     padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-icon-wrapper {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-icon {
+    font-size: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-list li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bullet {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 576px) {
+  .services-section {
+    padding: 2.5rem 0;
+  }
+  
+  .services-section .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .service-card {
+    padding: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .service-icon {
+    font-size: 1.4rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .service-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .bullet {
+    font-size: 1rem;
+    margin-right: 0.4rem;
+  }
+}
+
+/* Extra Small Mobile Responsive */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 2rem 0;
+  }
+  
+  .services-section .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-icon-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+
+  .service-icon {
+    font-size: 1.3rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-list li {
+    font-size: 0.8rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .service-card:hover {
+    transform: none;
+  }
+
+  .service-card:hover .service-icon-wrapper {
+    transform: none;
+  }
+
+  .service-card:hover .service-icon {
+    transform: none;
+  }
+
+  .service-card:hover .service-list li {
+    transform: none;
+  }
+
+  .service-card:hover .bullet {
+    transform: none;
   }
 } 

@@ -230,4 +230,346 @@
   color: #2563EB;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(37,99,235,0.08);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .erp-step-cards-wrapper {
+    gap: 1.5rem;
+  }
+  .erp-step-card {
+    width: 220px;
+  }
+  
+  .erp-modules-list {
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .erp-module-card {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+  .erp-step-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .erp-step-card {
+    width: 95%;
+    min-width: 220px;
+    max-width: 400px;
+  }
+  
+  .erp-modules-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.2rem 0.5rem;
+  }
+  .erp-module-card {
+    padding: 1.2rem 0.8rem 1rem 0.8rem;
+  }
+  .erp-module-title {
+    font-size: 1.08rem;
+  }
+  
+  .erp-step-chevron {
+    min-height: 80px;
+  }
+  
+  .erp-step-number {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .erp-step-icon {
+    font-size: 2rem !important;
+    margin-bottom: 0.6rem;
+  }
+  
+  .erp-step-title {
+    font-size: 1.05rem;
+  }
+  
+  .erp-step-features-modern li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .erp-step-cards-wrapper {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .erp-step-card {
+    width: 90%;
+    min-width: 200px;
+    max-width: 350px;
+    margin-bottom: 1rem;
+  }
+  
+  .erp-step-chevron {
+    min-height: 70px;
+  }
+  
+  .erp-step-number {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .erp-step-icon {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .erp-step-card-content {
+    padding: 1rem 1rem 1.2rem 1rem;
+  }
+  
+  .erp-step-title {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  .erp-step-features-modern {
+    gap: 0.4rem;
+  }
+  
+  .erp-step-features-modern li {
+    font-size: 0.9rem;
+    padding: 0.15rem 0.4rem;
+  }
+  
+  .erp-step-divider {
+    width: 50%;
+    margin: 0.8rem auto 1rem auto;
+  }
+  
+  .erp-modules-list {
+    gap: 1rem;
+    padding: 1rem 0.3rem;
+    border-radius: 1.5rem;
+  }
+  
+  .erp-module-card {
+    padding: 1rem 0.6rem 0.8rem 0.6rem;
+    border-radius: 1rem;
+  }
+  
+  .erp-module-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .erp-module-features {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+  }
+  
+  .erp-module-features li {
+    margin-bottom: 0.5rem;
+    padding: 0.15rem 0.4rem 0.15rem 0.2rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 576px) {
+  .erp-step-cards-wrapper {
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .erp-step-card {
+    width: 95%;
+    min-width: 180px;
+    max-width: 320px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .erp-step-chevron {
+    min-height: 60px;
+  }
+  
+  .erp-step-number {
+    font-size: 0.9rem;
+    margin-top: 0.7rem;
+  }
+  
+  .erp-step-icon {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.4rem;
+  }
+  
+  .erp-step-card-content {
+    padding: 0.8rem 0.8rem 1rem 0.8rem;
+  }
+  
+  .erp-step-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .erp-step-features-modern {
+    gap: 0.3rem;
+  }
+  
+  .erp-step-features-modern li {
+    font-size: 0.85rem;
+    padding: 0.1rem 0.3rem;
+  }
+  
+  .erp-step-divider {
+    width: 45%;
+    margin: 0.6rem auto 0.8rem auto;
+    height: 1px;
+  }
+  
+  .erp-modules-list {
+    gap: 0.8rem;
+    padding: 0.8rem 0.2rem;
+    border-radius: 1rem;
+  }
+  
+  .erp-module-card {
+    padding: 0.8rem 0.5rem 0.6rem 0.5rem;
+    border-radius: 0.8rem;
+    border-left-width: 4px;
+  }
+  
+  .erp-module-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .erp-module-features {
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+  }
+  
+  .erp-module-features li {
+    margin-bottom: 0.4rem;
+    padding: 0.1rem 0.3rem 0.1rem 0.2rem;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .erp-step-card {
+    width: 98%;
+    min-width: 160px;
+    max-width: 280px;
+  }
+  
+  .erp-step-chevron {
+    min-height: 55px;
+  }
+  
+  .erp-step-number {
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+  }
+  
+  .erp-step-icon {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.3rem;
+  }
+  
+  .erp-step-card-content {
+    padding: 0.7rem 0.7rem 0.8rem 0.7rem;
+  }
+  
+  .erp-step-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .erp-step-features-modern li {
+    font-size: 0.8rem;
+    padding: 0.08rem 0.25rem;
+  }
+  
+  .erp-module-card {
+    padding: 0.7rem 0.4rem 0.5rem 0.4rem;
+    border-left-width: 3px;
+  }
+  
+  .erp-module-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .erp-module-features {
+    font-size: 0.85rem;
+    padding-left: 0.7rem;
+  }
+  
+  .erp-module-features li {
+    margin-bottom: 0.3rem;
+    padding: 0.08rem 0.25rem 0.08rem 0.2rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .erp-step-cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .erp-step-card {
+    width: 200px;
+    min-width: 180px;
+    max-width: 220px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .erp-modules-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .erp-step-card {
+    border-width: 1px;
+  }
+  
+  .erp-module-card {
+    border-left-width: 4px;
+  }
+  
+  .erp-step-divider {
+    height: 1px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .erp-step-card,
+  .erp-module-card {
+    transition: none;
+    animation: none;
+  }
+  
+  .erp-step-card:hover,
+  .erp-module-card:hover {
+    transform: none;
+  }
+  
+  .erp-step-features li,
+  .erp-step-features-modern li,
+  .erp-module-features li {
+    transition: none;
+  }
 } 
