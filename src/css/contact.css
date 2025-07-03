@@ -81,7 +81,7 @@
 
 textarea.form-control {
   resize: vertical;
-  min-height: 120px;
+  min-height: 180px !important;
 }
 
 .contact-form .btn-primary {
@@ -264,11 +264,6 @@ textarea.form-control {
     padding: 3rem 0;
   }
 
-  .contact-section .section-title {
-    font-size: 2.25rem;
-    margin-bottom: 2.5rem;
-  }
-
   .contact-form,
   .contact-info {
     padding: 2.25rem;
@@ -301,11 +296,6 @@ textarea.form-control {
 @media (max-width: 768px) {
   .contact-section {
     padding: 2.5rem 0;
-  }
-
-  .contact-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
   }
 
   .contact-form,
@@ -350,6 +340,10 @@ textarea.form-control {
     font-size: 0.95rem;
   }
 
+  textarea.form-control {
+    min-height: 80px !important;
+  }
+
   .contact-form .btn-primary {
     padding: 0.875rem !important;
     font-size: 1rem;
@@ -360,11 +354,6 @@ textarea.form-control {
 @media (max-width: 576px) {
   .contact-section {
     padding: 2rem 0;
-  }
-
-  .contact-section .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.75rem;
   }
 
   .contact-form,
@@ -409,6 +398,10 @@ textarea.form-control {
     font-size: 0.9rem;
   }
 
+  textarea.form-control {
+    min-height: 60px !important;
+  }
+
   .contact-form .btn-primary {
     max-width: 120px;
     padding: 0.6rem 0.7rem !important;
@@ -424,11 +417,6 @@ textarea.form-control {
 @media (max-width: 480px) {
   .contact-section {
     padding: 1.5rem 0;
-  }
-
-  .contact-section .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
   }
 
   .contact-form,
@@ -466,6 +454,10 @@ textarea.form-control {
   .form-control {
     padding: 0.65rem 0.7rem;
     font-size: 0.85rem;
+  }
+
+  textarea.form-control {
+    min-height: 40px !important;
   }
 
   .contact-form .btn-primary {

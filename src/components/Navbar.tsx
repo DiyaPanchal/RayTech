@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 import logo from "/logo-with-tagline.png";
 import "../css/navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("Home");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -14,6 +13,11 @@ export default function Navbar() {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const handleNavClick = (link: string) => {
+    setActiveLink(link);
+    closeMenu();
   };
 
   return (
@@ -26,9 +30,9 @@ export default function Navbar() {
               <span>Ray Tech</span>
             </a> */}
 
-            <Link className="navbar-brand" to="/">
+            <a className="navbar-brand" href="/">
               <img src={logo} alt="Ray Tech Logo" width="250" height="40" />
-            </Link>
+            </a>
           </div>
           <button
             className={`custom-navbar-toggler ${isOpen ? "active" : ""}`}
@@ -42,54 +46,51 @@ export default function Navbar() {
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}>
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link
-                  className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
-                  to="/"
-                  onClick={closeMenu}
+                <a
+                  className={`nav-link${activeLink === "Home" ? " active" : ""}`}
+                  href="/"
+                  onClick={() => handleNavClick("Home")}
                 >
                   Home
-                </Link>
+                </a>
               </li>
-              {location.pathname === "/" && (
-                <>
+              {/* Only show these anchors on home page, so keep as is */}
                   <li className="nav-item">
                     <a
-                      className="nav-link"
+                      className={`nav-link${activeLink === "About" ? " active" : ""}`}
                       href="#about"
-                      onClick={closeMenu}
+                      onClick={() => handleNavClick("About")}
                     >
                       About
                     </a>
                   </li>
                   <li className="nav-item">
                     <a
-                      className="nav-link"
+                      className={`nav-link${activeLink === "Services" ? " active" : ""}`}
                       href="#services"
-                      onClick={closeMenu}
+                      onClick={() => handleNavClick("Services")}
                     >
                       Services
                     </a>
                   </li>
                   <li className="nav-item">
                     <a
-                      className="nav-link"
+                      className={`nav-link${activeLink === "Why Us" ? " active" : ""}`}
                       href="#why-us"
-                      onClick={closeMenu}
+                      onClick={() => handleNavClick("Why Us")}
                     >
                       Why Us
                     </a>
                   </li>
                   <li className="nav-item">
                     <a
-                      className="nav-link"
+                      className={`nav-link${activeLink === "Contact" ? " active" : ""}`}
                       href="#contact"
-                      onClick={closeMenu}
+                      onClick={() => handleNavClick("Contact")}
                     >
                       Contact
                     </a>
                   </li>
-                </>
-              )}
             </ul>
           </div>
         </nav>

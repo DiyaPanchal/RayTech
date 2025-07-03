@@ -121,11 +121,6 @@
   .services-section {
     padding: 4rem 0;
   }
-  
-  .services-section .section-title {
-    font-size: 2.25rem;
-    margin-bottom: 2.5rem;
-  }
 
   .service-card {
     padding: 1.75rem;
@@ -146,14 +141,19 @@
     padding: 3rem 0;
   }
   
-  .services-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  .row.g-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
-  
-  .service-card {
-    padding: 1.5rem;
+  .col-md-6.col-lg-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
     margin-bottom: 1rem;
+  }
+  .service-card {
+    padding: 1.1rem;
+    margin-bottom: 0.5rem;
   }
 
   .service-icon-wrapper {
@@ -188,14 +188,17 @@
     padding: 2.5rem 0;
   }
   
-  .services-section .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.75rem;
+  .row.g-1{
+    gap: 0.5rem;
   }
-  
+  .col-md-6.col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
   .service-card {
-    padding: 1.25rem;
-    margin-bottom: 0.75rem;
+    padding: 0.9rem;
+    margin-bottom: 0.5rem;
   }
 
   .service-icon-wrapper {
@@ -230,13 +233,18 @@
     padding: 2rem 0;
   }
   
-  .services-section .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+  .row.g-1{
+    display: flex;
+    flex-wrap: wrap;
   }
-  
+  .col-md-6.col-lg-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 0.4rem;
+  }
   .service-card {
     padding: 1rem;
+    margin-bottom: 0.4rem;
   }
 
   .service-icon-wrapper {

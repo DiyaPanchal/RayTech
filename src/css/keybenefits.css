@@ -126,9 +126,32 @@
     padding: 1.25rem;
   }
   
+  .benefit-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
   .benefit-icon svg {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  
+  .row.g-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-title {
+    color: #1A1A1A !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
   }
 }
 
@@ -202,6 +225,32 @@
   /* Disable all animations on very small screens */
   .benefit-card:hover {
     background-color: rgba(37, 99, 235, 0.02);
+  }
+  
+  .benefit-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+  .benefit-icon svg {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  
+  .row.g-1 {
+    gap: 0.5rem;
+  }
+  .col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit-title {
+    color: #1A1A1A !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
   }
 }
 

@@ -125,11 +125,6 @@
     padding: 4rem 0;
   }
 
-  .why-choose-section .section-title {
-    font-size: 2.25rem;
-    margin-bottom: 2.5rem;
-  }
-
   .reason-card {
     padding: 2.25rem 1.75rem;
   }
@@ -159,9 +154,15 @@
     padding: 3rem 0;
   }
 
-  .why-choose-section .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  .row.g-4.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .col-md-6.col-lg-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 1rem;
   }
 
   .reason-card {
@@ -195,9 +196,13 @@
     padding: 2.5rem 0;
   }
 
-  .why-choose-section .section-title {
-    font-size: 1.75rem;
-    margin-bottom: 1.75rem;
+  .row.g-4.justify-content-center {
+    gap: 0.5rem;
+  }
+  .col-md-6.col-lg-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 0.5rem;
   }
 
   .reason-card {
@@ -231,9 +236,13 @@
     padding: 2rem 0;
   }
 
-  .why-choose-section .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+  .row.g-4.justify-content-center {
+    gap: 0.4rem;
+  }
+  .col-md-6.col-lg-3 {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 0.4rem;
   }
 
   .reason-card {

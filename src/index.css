@@ -134,7 +134,7 @@ button:focus-visible {
   }
 
   .section-title {
-    font-size: calc(1.5rem + 0.8vw) !important;
+    font-size: calc(2rem + 1vw) !important;
     margin-bottom: 2.5rem;
   }
 
@@ -149,8 +149,11 @@ button:focus-visible {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .custom-container {
@@ -158,7 +161,7 @@ button:focus-visible {
   }
 
   .section-title {
-    font-size: calc(1.25rem + 0.6vw) !important;
+    font-size: calc(1.8rem + 0.8vw) !important;
     margin-bottom: 2rem;
   }
 
@@ -189,8 +192,11 @@ button:focus-visible {
 
 /* Small Mobile Responsive */
 @media (max-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .custom-container {
@@ -198,14 +204,14 @@ button:focus-visible {
   }
 
   .section-title {
-    font-size: calc(1.1rem + 0.5vw) !important;
-    margin-bottom: 1.75rem;
+    font-size: calc(1.5rem + 0.7vw) !important;
+    margin-bottom: 1.5rem;
   }
 
   .section-title::after {
-    width: 45px;
+    width: 40px;
     height: 2px;
-    margin: 0.25rem auto 0 auto;
+    margin: 0.3rem auto 0 auto;
   }
 
   .main-title {
@@ -229,21 +235,24 @@ button:focus-visible {
 
 /* Extra Small Mobile Responsive */
 @media (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
   body {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .custom-container {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .section-title {
-    font-size: calc(1rem + 0.4vw) !important;
-    margin-bottom: 1.5rem;
+    font-size: calc(1.5rem + 0.6vw) !important;
+    margin-bottom: 1.1rem;
   }
 
   .section-title::after {
-    width: 40px;
+    width: 30px;
     height: 2px;
     margin: 0.25rem auto 0 auto;
   }

@@ -6,14 +6,12 @@ import GraphicDesignPage from "./pages/GraphicDesign";
 import SeoPage from "./pages/Seo";
 import DigitalMarketingPage from "./pages/DigitalMarketing";
 import ErpSolutionsPage from "./pages/ErpSolutions";
-import ScrollToTop from "./components/ScrollToTop";
 import "./index.css";
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/web" element={<WebDevelopmentPage />} />

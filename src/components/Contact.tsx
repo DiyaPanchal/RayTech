@@ -8,6 +8,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    number: "",
     message: ""
   });
 
@@ -32,6 +33,7 @@ export default function Contact() {
         {
           from_name: formData.name,
           from_email: formData.email,
+          from_number: formData.number,
           message: formData.message,
           to_email: "director.raytech@gmail.com",
         },
@@ -41,7 +43,7 @@ export default function Contact() {
       if (result.status === 200) {
         toast.success("Your message has been sent successfully!", {
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", number: "", message: "" });
       }
     } catch (error) {
       toast.error("Oops! Something went wrong. Please try again later.", {
@@ -90,6 +92,21 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </div>
+
+              <div className="form-group">
+                <label htmlFor="number">Phone Number</label>
+                <input
+                  type="tel"
+                  id="number"
+                  className="form-control"
+                  placeholder="Your phone number"
+                  required
+                  value={formData.number}
+                  onChange={handleChange}
+                  pattern="[0-9]{10,15}"
+                  maxLength={15}
+                />
+              </div>
               
               <div className="form-group">
                 <label htmlFor="message">Message</label>
@@ -99,9 +116,13 @@ export default function Contact() {
                   rows={4}
                   placeholder="Your message"
                   required
+                  maxLength={250}
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
+                <div style={{ fontSize: '0.95rem', color: '#888', textAlign: 'right', marginTop: '0.25rem' }}>
+                  {formData.message.length}/250
+                </div>
               </div>
               
               <button 

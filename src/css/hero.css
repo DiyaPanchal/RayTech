@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(135deg, #F0F4FF 0%, #E6EEFF 100%);
-  padding: 7rem 0 10.5rem 0;
+  padding: 3rem 0 5.5rem 0;
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -79,9 +79,9 @@
 }
 
 .hero-text h1 {
-  font-family: 'Bangers', cursive;
-  font-size: 6.75rem;
-  font-weight: 800;
+  font-family: 'Calibri', cursive;
+  font-size: 5.75rem;
+  font-weight: 900;
   line-height: 1;
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #1A1A1A, #2563EB);
@@ -111,7 +111,7 @@
   margin-bottom: 2rem;
 }
 
-.btn {
+.hero-buttons .btn {
   max-width: 180px;
   min-width: 100px;
   padding: 0.8rem 1.2rem !important;

@@ -20,10 +20,8 @@ export default function Footer() {
             <ul>
               <li><a href="#about">About Us</a></li>
               <li><a href="#services">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#whyus">Why us</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="/pricing">Pricing</a></li>
-              <li><a href="#careers">Careers</a></li>
             </ul>
           </div>
 

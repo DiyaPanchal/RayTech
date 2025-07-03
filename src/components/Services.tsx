@@ -4,37 +4,34 @@ import { BsPalette } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { TbChartLine } from "react-icons/tb";
 import { HiPuzzle } from "react-icons/hi";
-import { useNavigate } from "react-router-dom";
 
 export default function Services() {
-  const navigate = useNavigate();
-
   const handleServiceClick = (title: string) => {
     switch (title) {
-      case "Website Design Development":
-        navigate("/web");
+      case "Website Development":
+        window.location.href = "/web";
         break;
       case "Graphic Design":
-        navigate("/graphic");
+        window.location.href = "/graphic";
         break;
       case "SEO Services":
-        navigate("/seo");
+        window.location.href = "/seo";
         break;
       case "Digital Marketing":
-        navigate("/digital");
+        window.location.href = "/digital";
         break;
       case "ERP Solutions":
-        navigate("/erp");
+        window.location.href = "/erp";
         break;
       default:
-        navigate("/");
+        window.location.href = "/";
     }
   };
   
   const services = [
     {
       icon: <FaCode className="service-icon" />,
-      title: "Website Design Development",
+      title: "Website Development",
       items: [
         "Custom Development",
         "Responsive Design",
