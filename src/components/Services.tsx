@@ -4,27 +4,29 @@ import { BsPalette } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { TbChartLine } from "react-icons/tb";
 import { HiPuzzle } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
   const handleServiceClick = (title: string) => {
     switch (title) {
       case "Website Development":
-        window.location.href = "/web";
+        navigate("/web", { replace: true });
         break;
       case "Graphic Design":
-        window.location.href = "/graphic";
+        navigate("/graphic");
         break;
       case "SEO Services":
-        window.location.href = "/seo";
+        navigate("/seo");
         break;
       case "Digital Marketing":
-        window.location.href = "/digital";
+        navigate("/digital");
         break;
       case "ERP Solutions":
-        window.location.href = "/erp";
+        navigate("/erp");
         break;
       default:
-        window.location.href = "/";
+        navigate("/");
     }
   };
   

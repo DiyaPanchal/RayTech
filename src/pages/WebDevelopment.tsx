@@ -1,6 +1,7 @@
 import WebDetails from '../components/WebDetails';
 import Pricing, { type PricingPackage } from '../components/Pricing';
 import Layout from '../components/Layout';
+import WebClient from '../components/WebClient';
 import '../css/serviceDetails.css';
 
 const webDevPackages: PricingPackage[] = [
@@ -64,6 +65,7 @@ const WebDevelopmentPage = () => {
     <Layout>
       <div className="service-details-page">
         <WebDetails />
+        <WebClient />
         <Pricing packages={webDevPackages} />
       </div>
     </Layout>
