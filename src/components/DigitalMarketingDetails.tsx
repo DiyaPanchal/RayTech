@@ -91,10 +91,10 @@ const DigitalMarketingDetails = () => {
           <div className="intro-section">
             <div className="intro-content">
               <p className="intro-text">
-                At Ray Tech, we don't just build brands — we make them thrive in the digital space. With a strategic blend of creativity, data, and performance-driven execution, we help businesses grow exponentially by reaching the right audience, at the right time, on the right platform.
+                At Ray Tech, we don't just build brands, we make them thrive in the digital space. With a strategic blend of creativity, data, and performance-driven execution, we help businesses grow exponentially by reaching the right audience, at the right time, on the right platform.
               </p>
               <p className="intro-text mb-0">
-                Whether you're launching a new product, reviving your brand, or expanding to new markets — our digital marketing solutions help you connect, convert, and succeed.
+                Whether you're launching a new product, reviving your brand, or expanding to new markets, our digital marketing solutions help you connect, convert, and succeed.
 With our cutting-edge expertise in website design, graphic design, SEO, digital marketing, and customized ERP solutions, we empower businesses to not only keep up with the digital revolution but to lead it.</p>
             </div>
             <div className="intro-animation">

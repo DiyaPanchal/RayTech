@@ -2,7 +2,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import {
   FaUserMd,
   FaShoppingCart,
@@ -14,6 +14,9 @@ import {
   FaChalkboardTeacher,
 } from "react-icons/fa";
 import "../css/webclient.css";
+import { useRef } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { Swiper as SwiperType } from "swiper";
 
 const clients = [
   {
@@ -121,6 +124,7 @@ const clients = [
 ];
 
 export default function WebClient() {
+  const swiperRef = useRef<SwiperType | null>(null);
   return (
     <section id="web-client" className="web-client-section">
       <div className="custom-container">
@@ -131,54 +135,75 @@ export default function WebClient() {
             industries:
           </p>
         </div>
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          pagination={{ clickable: true }}
-          modules={[Pagination, Autoplay]}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          className="web-client-carousel"
-        >
-          {clients.map((client, idx) => (
-            <SwiperSlide key={idx}>
-              <div
-                className={`client-card client-card-${client.category.toLowerCase()} fade-in-card`}
-                style={{
-                  backgroundImage: `url(${client.bgImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                  position: "relative",
-                  zIndex: 1,
-                  minHeight: "320px",
-                  padding: 0,
-                  display: "flex",
-                  alignItems: "stretch",
-                }}
-              >
-                <div className="client-card-overlay">
-                  <div className="client-icon">{client.icon}</div>
-                  <div className="client-category">{client.category}</div>
-                  <div className="client-industry">{client.industry}</div>
-                  <div className="client-desc">{client.desc}</div>
-                  <a
-                    href={client.website}
-                    className="client-website"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {client.display}
-                  </a>
+        <div className="swiper-container-wrapper">
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            pagination={{ clickable: true }}
+            modules={[Pagination, Autoplay]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            onSwiper={(swiper) => { swiperRef.current = swiper; }}
+            className="web-client-carousel"
+          >
+            {clients.map((client, idx) => (
+              <SwiperSlide key={idx}>
+                <div
+                  className={`client-card client-card-${client.category.toLowerCase()} fade-in-card`}
+                  style={{
+                    backgroundImage: `url(${client.bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    position: "relative",
+                    zIndex: 1,
+                    minHeight: "320px",
+                    padding: 0,
+                    display: "flex",
+                    alignItems: "stretch",
+                  }}
+                >
+                  <div className="client-card-overlay">
+                    <div className="client-icon">{client.icon}</div>
+                    <div className="client-category">{client.category}</div>
+                    <div className="client-industry">{client.industry}</div>
+                    <div className="client-desc">{client.desc}</div>
+                    <a
+                      href={client.website}
+                      className="client-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {client.display}
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <span
+            className="custom-swiper-chevron custom-swiper-chevron-left"
+            onClick={() => swiperRef.current?.slidePrev()}
+            aria-label="Previous"
+            role="button"
+            tabIndex={0}
+          >
+            <FiChevronLeft size={32} />
+          </span>
+          <span
+            className="custom-swiper-chevron custom-swiper-chevron-right"
+            onClick={() => swiperRef.current?.slideNext()}
+            aria-label="Next"
+            role="button"
+            tabIndex={0}
+          >
+            <FiChevronRight size={32} />
+          </span>
+        </div>
       </div>
     </section>
   );

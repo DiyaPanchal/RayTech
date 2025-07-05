@@ -33,15 +33,14 @@ const erpBenefits = [
 ];
 
 const erpStepColors = [
-  '#b3cfff', // light blue
-  '#2563eb', // medium blue
-  '#1e40af', // dark blue
-  '#a7f3d0', // light green
-  '#10b981', // medium green
-  '#047857', // dark green
-  '#e0c3fc', // light purple
-  '#a259ec', // medium purple
-  '#5f2c82', // dark purple
+  '#3B82F6', // vibrant blue
+  '#10B981', // emerald green
+  '#F59E0B', // amber orange
+  '#EF4444', // red
+  '#8B5CF6', // violet
+  '#06B6D4', // cyan
+  '#F97316', // orange
+  '#84CC16', // lime green
 ];
 
 const erpModules = [
@@ -143,10 +142,10 @@ const ErpDetails = () => (
         <div className="intro-section">
           <div className="intro-content">
             <p className="intro-text">
-              <strong>Ray Tech</strong> is your trusted partner for digital transformation, offering state-of-the-art ERP software that integrates every department - HR, Sales, Inventory, Operations, Finance, Production, and more—into one intelligent system.
+            Ray Tech is your trusted partner for digital transformation, offering state-of-the-art ERP software that integrates every department - HR, Sales, Inventory, Operations, Finance, Production, and more into one intelligent system.
             </p>
             <p className="intro-text mb-0">
-              In a world where efficiency drives growth, Ray Tech offers a unified ERP solution designed to <strong>streamline operations, integrate teams, and accelerate decision-making.</strong> Our ERP solution is fully modular, cloud-based, and customizable—tailored to your business model, whether you're a clinic, manufacturer, corporate firm, or startup.
+              In a world where efficiency drives growth, Ray Tech offers a unified ERP solution designed to streamline operations, integrate teams, and accelerate decision-making. Our ERP solution is fully modular, cloud-based, and customizable tailored to your business model, whether you're a clinic, manufacturer, corporate firm, or startup.
             </p>
           </div>
           <div className="intro-animation">

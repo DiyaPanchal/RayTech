@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 
 import "../css/graphicdetails.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import {
   SiAdobephotoshop,
   SiAdobeillustrator,

@@ -1,3 +1,5 @@
+/* ===== SHARED STYLES FOR SERVICE PAGES ===== */
+
 /* --- HERO SECTION: Common styles for WebDetails and GraphicDetails --- */
 .web-dev-herosection {
   background-color: #f8faff;
@@ -10,7 +12,6 @@
   margin-bottom: 2rem;
   padding: 0 1rem;
 }
-
 
 .intro-section {
   position: relative;
@@ -78,105 +79,41 @@
   opacity: 0.1;
   z-index: 0;
 }
+
 .dots-top-right {
   top: 2rem;
   right: 2rem;
 }
+
 .dots-bottom-left {
   bottom: 2rem;
   left: 2rem;
 }
 
-@media (max-width: 1200px) {
-  .intro-section {
-    margin: 3rem 0 5rem;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-
-  .intro-text {
-    font-size: 1.2rem;
-  }
-
-  .intro-animation {
-    width: 110%;
-    margin-right: -5%;
-  }
-
-  .intro-animation > div {
-    min-height: 400px;
-  }
-}
-@media (max-width: 991px) {
-  .section-heading-wrapper {
-    margin-bottom: 1rem;
-  }
-
-  .intro-section {   
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .intro-text {
-    font-size: 1.15rem;
-  }
-
-  .intro-animation {
-    width: 100%;
-    margin-right: 0;
-    margin-top: 1rem;
-  }
-
-  .intro-animation > div {
-    min-height: 350px;
-  }
-  
-  .benefits-section {
-    padding: 3rem 0;
-  }
-
-  .web-dev-herosection {
-    padding: 2rem 0;
-  }
-}
-
-@media (max-width: 576px) {
-  .web-dev-herosection {
-    padding: 1rem 0;
-  }
-  .intro-text {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-  .intro-animation {
-    margin-top: 0.5rem;
-  }
-  
-  .benefits-section {
-    padding: 2rem 0;
-  }
-}
-
-/* Target Audience Section */
-.target-audience-section{
+/* --- TARGET AUDIENCE SECTION --- */
+.target-audience-section {
   padding: 4rem 0;
   background-color: #F8FAFF;
 }
+
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
 }
+
 .audience-item {
   text-align: center;
   padding: 1.5rem;
   position: relative;
   transition: all 0.4s ease;
 }
+
 .audience-item:hover {
   transform: translateY(-5px);
 }
+
 .audience-icon {
   width: 70px;
   height: 70px;
@@ -188,19 +125,23 @@
   justify-content: center;
   transition: all 0.4s ease;
 }
+
 .audience-icon svg {
   width: 2rem;
   height: 2rem;
   color: #2563EB;
   transition: all 0.4s ease;
 }
+
 .audience-item:hover .audience-icon {
   background: linear-gradient(135deg, #2563EB22 0%, #1D4ED822 100%);
   transform: scale(1.1);
 }
+
 .audience-item:hover .audience-icon svg {
   color: #1D4ED8;
 }
+
 .audience-item h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -208,6 +149,7 @@
   margin-bottom: 1rem;
   transition: all 0.4s ease;
 }
+
 .audience-line {
   width: 40px;
   height: 3px;
@@ -216,34 +158,16 @@
   border-radius: 2px;
   transition: all 0.4s ease;
 }
+
 .audience-item:hover h4 {
   color: #2563EB;
 }
+
 .audience-item:hover .audience-line {
   width: 60px;
 }
-@media (max-width: 991px) {
-  .audience-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-  }
-}
-@media (max-width: 768px) {
-  .audience-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  .audience-icon {
-    width: 60px;
-    height: 60px;
-  }
-  .audience-icon svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
 
-/* Core Services Section (shared by web and seo) */
+/* --- WEB DEVELOPMENT SERVICES SECTION --- */
 .web-dev-services-section {
   position: relative;
   padding: 4rem 0;
@@ -297,30 +221,25 @@
   line-height: 1.5;
 }
 
-@media (max-width: 1200px) {
-  .web-dev-services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .web-dev-services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .web-dev-service-item {
-    padding: 1.5rem;
-  }
-}
-/* --- CORE SERVICES SECTION (moved from graphicdetails.css for reuse) --- */
-.core-services-section{
+/* --- CORE SERVICES SECTION --- */
+.core-services-section {
   padding: 4rem 0;
   background-color: #F8FAFF;
 }
+
 .services-showcase {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 2rem 0;
+}
+
+/* Center last two items when they wrap to next row (for 6 items total) */
+.services-showcase > .service-item:nth-last-child(-n+2):nth-child(4n-1),
+.services-showcase > .service-item:nth-last-child(-n+2):nth-child(4n) {
+  grid-column: span 2;
+  justify-self: center;
+  max-width: calc(50% - 0.75rem);
 }
 
 .service-item {
@@ -382,28 +301,136 @@
   color: #1F2937;
 }
 
-/* Responsive Adjustments for core services */
+/* ===== RESPONSIVE DESIGN - SHARED STYLES ONLY ===== */
+
+/* Large Desktop (1200px and below) */
+@media (max-width: 1200px) {
+  .intro-section {
+    margin: 3rem 0 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .intro-animation {
+    width: 110%;
+    margin-right: -5%;
+  }
+
+  .intro-animation > div {
+    min-height: 400px;
+  }
+  
+  .web-dev-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop/Tablet (991px and below) */
 @media (max-width: 991px) {
+  .section-heading-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .intro-section {   
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.15rem;
+  }
+
+  .intro-animation {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+
+  .intro-animation > div {
+    min-height: 350px;
+  }
+  
+  .benefits-section {
+    padding: 3rem 0;
+  }
+
+  .web-dev-herosection {
+    padding: 2rem 0;
+  }
+  
+  .audience-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+  }
+  
   .services-showcase {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Tablet (768px and below) */
 @media (max-width: 768px) {
+  .audience-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .audience-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .audience-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .web-dev-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .web-dev-service-item {
+    padding: 1.5rem;
+  }
+  
   .service-item {
     padding: 1.25rem;
   }
+  
   .service-decoration {
     width: 80px;
     height: 80px;
   }
+  
   .service-item:hover .service-decoration {
     width: 120px;
     height: 120px;
   }
 }
 
+/* Mobile (576px and below) */
 @media (max-width: 576px) {
+  .web-dev-herosection {
+    padding: 1rem 0;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .intro-animation {
+    margin-top: 0.5rem;
+  }
+  
+  .benefits-section {
+    padding: 2rem 0;
+  }
+  
   .services-showcase {
     grid-template-columns: 1fr;
   }
@@ -417,7 +444,9 @@
   }
 }
 
-/* Animation Controls for Performance */
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Animation Controls for Performance - Mobile */
 @media (max-width: 768px) {
   /* Disable complex animations on mobile */
   .intro-animation {
@@ -497,6 +526,7 @@
   }
 }
 
+/* Animation Controls for Performance - Very Small Screens */
 @media (max-width: 576px) {
   /* Disable all animations on very small screens */
   .audience-item:hover {
@@ -515,63 +545,63 @@
   }
   
   .audience-item {
-    transition: none !important;
+    transition: none;
   }
   
   .audience-item:hover {
-    transform: none !important;
+    transform: none;
   }
   
   .audience-icon {
-    transition: none !important;
+    transition: none;
   }
   
   .audience-item:hover .audience-icon {
-    transform: none !important;
+    transform: none;
   }
   
   .audience-icon svg {
-    transition: none !important;
+    transition: none;
   }
   
   .audience-line {
-    transition: none !important;
+    transition: none;
   }
   
   .audience-item:hover .audience-line {
-    width: 40px !important;
+    width: 40px;
   }
   
   .service-item {
-    transition: none !important;
+    transition: none;
   }
   
   .service-item:hover {
-    transform: none !important;
+    transform: none;
   }
   
   .service-content h4 {
-    transition: none !important;
+    transition: none;
   }
   
   .service-content p {
-    transition: none !important;
+    transition: none;
   }
   
   .service-decoration {
-    transition: none !important;
+    transition: none;
   }
   
   .service-item:hover .service-decoration {
-    width: 100px !important;
-    height: 100px !important;
+    width: 100px;
+    height: 100px;
   }
   
   .service-item:hover .service-content h4 {
-    color: #1A1A1A !important;
+    color: #1A1A1A;
   }
   
   .service-item:hover .service-content p {
-    color: #4B5563 !important;
+    color: #4B5563;
   }
 }
