@@ -1,6 +1,7 @@
 import GraphicDetails from '../components/GraphicDetails';
 import Pricing, { type PricingPackage } from '../components/Pricing';
 import Layout from '../components/Layout';
+import GraphicClient from '../components/GraphicClient';
 import '../css/serviceDetails.css';
 
 const graphicDesignPackages: PricingPackage[] = [
@@ -45,6 +46,7 @@ const GraphicDesignPage = () => {
     <Layout>
       <div className="service-details-page">
         <GraphicDetails />
+        <GraphicClient />
         <Pricing packages={graphicDesignPackages} note="Custom packages available based on specific industry needs or campaign scope." />
       </div>
     </Layout>

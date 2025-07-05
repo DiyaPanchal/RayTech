@@ -73,7 +73,7 @@ const GraphicDetails = () => {
           <div className="intro-section">
             <div className="intro-content">
               <p className="intro-text">
-                In today's digital landscape, compelling design is more than just aesthetics—it's a <strong>strategic business investment</strong>. Our expert team transforms your vision into stunning visuals that captivate your audience and drive results. From brand identity to marketing materials, we create designs that not only look beautiful but also deliver measurable impact.
+                In today's digital landscape, compelling design is more than just aesthetics it's a strategic business investment. Our expert team transforms your vision into stunning visuals that captivate your audience and drive results. From brand identity to marketing materials, we create designs that not only look beautiful but also deliver measurable impact.
               </p>
               <p className="intro-text mb-0">
                 Whether you're building a brand, launching a product, or running a campaign, our designs build trust, enhance engagement, and boost conversion rates. We combine creativity with strategy to ensure your visual content stands out in today's competitive market.

@@ -192,12 +192,12 @@
   background-color: #F8FAFF;
 }
 
-/* .services-showcase {
+.services-showcase {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 2rem 0;
-} */
+}
 
 .service-item {
   position: relative;
@@ -258,7 +258,9 @@
   color: #1F2937;
 }
 
-/* Responsive Design - Comprehensive Fixes */
+/* ===== RESPONSIVE DESIGN - PROPERLY ORGANIZED ===== */
+
+/* Large Desktop (1200px and below) */
 @media (max-width: 1200px) {
   .services-showcase {
     grid-template-columns: repeat(3, 1fr);
@@ -271,6 +273,7 @@
   }
 }
 
+/* Desktop/Tablet (991px and below) */
 @media (max-width: 991px) {
   .graphic-details-section {
     padding-bottom: 2rem !important;
@@ -294,13 +297,13 @@
   }
   
   .services-showcase {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1.5rem 0;
   }
   
   .tools-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   
@@ -321,8 +324,57 @@
   .tool-name {
     font-size: 0.85rem;
   }
+  
+  /* Target Audience Section */
+  .target-audience-section {
+    padding: 2.5rem 0;
+  }
+  
+  .audience-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+  }
+  
+  .audience-item {
+    padding: 1rem;
+  }
+  
+  .audience-icon {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .audience-item h4 {
+    font-size: 1rem;
+  }
+  
+  /* Center last item if odd number of items in 2-column grid */
+  .audience-grid > .audience-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  
+  /* Tools Grid Odd Item Centering */
+  .tools-grid > .tool-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Tools Grid - Remove centering for 3-column layout */
+  .tools-grid > .tool-item:last-child:nth-child(3n+1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
+/* Tablet (768px and below) */
 @media (max-width: 768px) {
   .graphic-details-section {
     padding-bottom: 1rem !important;
@@ -347,13 +399,13 @@
   }
   
   .services-showcase {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
     padding: 1rem 0;
   }
   
   .tools-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
   }
   
@@ -420,11 +472,54 @@
   .core-services-section {
     overflow-x: hidden;
   }
+  
+  /* Target Audience Section */
+  .target-audience-section {
+    padding: 1.5rem 0;
+  }
+  
+  .audience-item {
+    padding: 0.75rem;
+  }
+  
+  .audience-icon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .audience-item h4 {
+    font-size: 0.95rem;
+  }
+  
+  /* Remove centering on mobile (single column) */
+  .audience-grid > .audience-item:last-child {
+    grid-column: auto;
+    justify-self: auto;
+  }
+  
+  /* Tools Grid - Remove centering on mobile */
+  .tools-grid > .tool-item:last-child {
+    grid-column: auto;
+    justify-self: auto;
+    min-width: auto;
+    max-width: none;
+    width: auto;
+  }
+  
+  /* Tools Grid - Remove centering for 2-column layout */
+  .tools-grid > .tool-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
+/* Mobile (576px and below) */
 @media (max-width: 576px) {
   .services-showcase {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     padding: 0.75rem 0;
   }
@@ -472,86 +567,36 @@
   .tools-showcase {
     margin-top: 0.75rem;
   }
-}
-
-/* Target Audience Section Responsive */
-@media (max-width: 991px) {
-  .target-audience-section {
-    padding: 2.5rem 0;
-  }
-  .audience-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.75rem;
-    padding: 0.5rem 0;
-  }
-  .audience-item {
-    padding: 1rem;
-  }
-  .audience-icon {
-    width: 55px;
-    height: 55px;
-  }
-  .audience-item h4 {
-    font-size: 1rem;
-  }
-  /* Center last item if odd number of items in 2-column grid */
-  .audience-grid > .audience-item:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-}
-@media (max-width: 768px) {
-  .target-audience-section {
-    padding: 1.5rem 0;
-  }
-  .audience-item {
-    padding: 0.75rem;
-  }
-  .audience-icon {
-    width: 45px;
-    height: 45px;
-  }
-  .audience-item h4 {
-    font-size: 0.95rem;
-  }
-  /* Remove centering on mobile (single column) */
-  .audience-grid > .audience-item:last-child {
-    grid-column: auto;
-    justify-self: auto;
-  }
-}
-@media (max-width: 576px) {
+  
+  /* Target Audience Section */
   .target-audience-section {
     padding: 1rem 0;
   }
+  
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
   .audience-item {
     padding: 0.5rem;
+    text-align: center;
   }
+  
   .audience-icon {
     width: 36px;
     height: 36px;
+    margin: 0 auto 0.5rem auto;
   }
+  
   .audience-item h4 {
     font-size: 0.9rem;
-  }
-}
-
-/* Tools Grid Odd Item Centering */
-@media (max-width: 991px) {
-  .tools-grid > .tool-item:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    min-width: 150px;
-    max-width: 400px;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .tools-grid > .tool-item:last-child {
-    grid-column: auto;
-    justify-self: auto;
-    min-width: auto;
-    max-width: none;
-    width: auto;
   }
 } 

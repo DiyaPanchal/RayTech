@@ -74,12 +74,12 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>Ray Tech Pvt. Ltd. © 2025 — All Rights Reserved.</p>
-            <div className="footer-bottom-links">
-              <a href="/privacy-policy">Privacy Policy</a>
+            <div className="footer-bottom-links"> 
+              <a href="https://www.termsfeed.com/live/50c63dd5-cb16-4d14-b27b-2b6cc76b9302" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
               <span className="separator">|</span>
-              <a href="/terms">Terms & Conditions</a>
-              <span className="separator">|</span>
-              <a href="/sitemap">Sitemap</a>
+              <a href="https://www.termsfeed.com/live/40830219-3be1-4c0b-a737-faf17050e02b" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+              {/* <span className="separator">|</span>
+              <a href="/sitemap">Sitemap</a> */}
             </div>
           </div>
         </div>

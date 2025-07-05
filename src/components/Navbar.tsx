@@ -2,10 +2,12 @@ import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import logo from "/logo-with-tagline.png";
 import "../css/navbar.css";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,6 +21,10 @@ export default function Navbar() {
     setActiveLink(link);
     closeMenu();
   };
+
+  // Only show Home link on service-related pages
+  const servicePaths = ["/web", "/graphic", "/seo", "/digital", "/erp"];
+  const onlyHome = servicePaths.includes(location.pathname);
 
   return (
     <>
@@ -54,7 +60,8 @@ export default function Navbar() {
                   Home
                 </a>
               </li>
-              {/* Only show these anchors on home page, so keep as is */}
+              {!onlyHome && (
+                <>
                   <li className="nav-item">
                     <a
                       className={`nav-link${activeLink === "About" ? " active" : ""}`}
@@ -91,6 +98,8 @@ export default function Navbar() {
                       Contact
                     </a>
                   </li>
+                </>
+              )}
             </ul>
           </div>
         </nav>

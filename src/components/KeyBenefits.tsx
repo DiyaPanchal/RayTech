@@ -19,12 +19,12 @@ const KeyBenefits: React.FC<KeyBenefitsProps> = ({
   subtitle = "Discover how our services can transform your business and drive sustainable growth"
 }) => {
   return (
-    <div className="graphic-why-section">
+    <div className="graphic-why-sectionr">
       <div className="section-heading-wrapper">
         <h2 className="section-title">{title}</h2>
         <p className="byline">{subtitle}</p>
       </div>
-      <div className="row g-4">
+      <div className="row g-4 justify-content-center">
         {benefits.map((benefit, index) => (
           <div key={index} className="col-md-6">
             <div className="benefit-card">

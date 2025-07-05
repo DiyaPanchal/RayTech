@@ -299,13 +299,13 @@
 
 @media (max-width: 1200px) {
   .web-dev-services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .web-dev-services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .web-dev-service-item {
     padding: 1.5rem;
@@ -406,6 +406,14 @@
 @media (max-width: 576px) {
   .services-showcase {
     grid-template-columns: 1fr;
+  }
+  
+  .web-dev-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .web-dev-service-item {
+    padding: 1.25rem;
   }
 }
 

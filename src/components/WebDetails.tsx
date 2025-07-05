@@ -53,7 +53,7 @@ const WebDetails = () => {
         { name: "NodeJS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
         { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" }
       ],
-      items: ["PHP", "Firebase", "Appwrite", "MySQL", "NodeJS", "Express"]
+      items: ["PHP", "Firebase", "Appwrite", "MySQL", "NodeJS", "Express","Admin Panels"]
     },
     {
       category: "Tools & Frameworks",
@@ -65,12 +65,12 @@ const WebDetails = () => {
       items: ["React Native", "REST APIs", "Twitter API"]
     },
     {
-      category: "CMS & E-Commerce",
+      category: "CMS & Others",
       icons: [
         { name: "WordPress", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" },
         { name: "WooCommerce", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" }
       ],
-      items: ["Custom platforms", "Firebase", "PHP integration"]
+      items: ["Custom platforms", "Firebase", "PHP integration","Budgeting Tools","Resume Builders","Social Media Automation"]
     },
     // {
     //   category: "Special Features",
@@ -105,7 +105,7 @@ const WebDetails = () => {
             <div className="intro-content">
               <p className="intro-text">
                 Unlock Your Digital Potential with Ray Tech! In today's digital-first world, 
-                a website is no longer just an option — it's an essential tool for 
+                a website is no longer just an option it's an essential tool for 
                 growth, engagement, and credibility. Whether you're a startup, a small business, 
                 a government officer or private officer looking for part time or full time business 
                 or an enterprise, your online presence is critical for reaching and retaining customers.

@@ -3,7 +3,16 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-import { FaUserMd, FaShoppingCart, FaShieldAlt, FaGraduationCap, FaQrcode, FaSeedling, FaBuilding, FaChalkboardTeacher } from "react-icons/fa";
+import {
+  FaUserMd,
+  FaShoppingCart,
+  FaShieldAlt,
+  FaGraduationCap,
+  FaQrcode,
+  FaSeedling,
+  FaBuilding,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import "../css/webclient.css";
 
 const clients = [
@@ -15,7 +24,7 @@ const clients = [
     icon: <FaUserMd size={36} color="#fff" />,
     desc: "Modern dental solutions for clinics and practitioners.",
     bgImage:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1661506996745-85bdb903578d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9yJTIwZGVudGlzdHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
     category: "DIAMOND",
@@ -24,8 +33,8 @@ const clients = [
     display: "avontattoosupply.com",
     icon: <FaShoppingCart size={36} color="#fff" />,
     desc: "Robust e-commerce platform for tattoo supplies.",
-    // bgImage: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80",
-    backgroundColor: "#1e2c44",
+    bgImage:
+      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80",
   },
   {
     category: "DIAMOND",
@@ -46,7 +55,7 @@ const clients = [
     icon: <FaUserMd size={36} color="#fff" />,
     desc: "Premium web presence for dental professionals.",
     bgImage:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80",
+      "https://plus.unsplash.com/premium_photo-1673953510197-0950d951c6d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZG9jdG9yfGVufDB8fDB8fHww",
   },
   {
     category: "PLATINUM",
@@ -118,7 +127,8 @@ export default function WebClient() {
         <div className="section-heading-wrapper">
           <h2 className="section-title">Client Work & Portfolio Highlights</h2>
           <p className="byline">
-            We take pride in having delivered robust solutions for a variety of industries:
+            We take pride in having delivered robust solutions for a variety of
+            industries:
           </p>
         </div>
         <Swiper
@@ -140,15 +150,15 @@ export default function WebClient() {
                 className={`client-card client-card-${client.category.toLowerCase()} fade-in-card`}
                 style={{
                   backgroundImage: `url(${client.bgImage})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                  position: 'relative',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  position: "relative",
                   zIndex: 1,
-                  minHeight: '320px',
+                  minHeight: "320px",
                   padding: 0,
-                  display: 'flex',
-                  alignItems: 'stretch',
+                  display: "flex",
+                  alignItems: "stretch",
                 }}
               >
                 <div className="client-card-overlay">
@@ -172,4 +182,4 @@ export default function WebClient() {
       </div>
     </section>
   );
-} 
+}
