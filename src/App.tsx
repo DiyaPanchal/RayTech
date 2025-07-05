@@ -7,11 +7,13 @@ import SeoPage from "./pages/Seo";
 import DigitalMarketingPage from "./pages/DigitalMarketing";
 import ErpSolutionsPage from "./pages/ErpSolutions";
 import "./index.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "../ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/web" element={<WebDevelopmentPage />} />

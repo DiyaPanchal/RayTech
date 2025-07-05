@@ -4,33 +4,33 @@ import { BsPalette } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { TbChartLine } from "react-icons/tb";
 import { HiPuzzle } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
+
   const handleServiceClick = (title: string) => {
-    let url = "/";
     switch (title) {
       case "Website Development":
-        url = "/web";
+        navigate("/web");
         break;
       case "Graphic Design":
-        url = "/graphic";
+        navigate("/graphic");
         break;
       case "SEO Services":
-        url = "/seo";
+        navigate("/seo");
         break;
       case "Digital Marketing":
-        url = "/digital";
+        navigate("/digital");
         break;
       case "ERP Solutions":
-        url = "/erp";
+        navigate("/erp");
         break;
       default:
-        url = "/";
+        navigate("/");
     }
-    // Force a full page reload to ensure proper mounting
-    window.location.href = url;
   };
-  
+
   const services = [
     {
       icon: <FaCode className="service-icon" />,
@@ -83,18 +83,16 @@ export default function Services() {
     <section id="services" className="services-section">
       <div className="custom-container">
         <h2 className="section-title mb-5">Our Services</h2>
-        
+
         <div className="row g-4">
           {services.map((service, index) => (
             <div key={index} className="col-md-6 col-lg-4">
-              <div 
-                className="service-card" 
+              <div
+                className="service-card"
                 onClick={() => handleServiceClick(service.title)}
-                style={{ cursor: 'pointer' }}
+                style={{ cursor: "pointer" }}
               >
-                <div className="service-icon-wrapper">
-                  {service.icon}
-                </div>
+                <div className="service-icon-wrapper">{service.icon}</div>
                 <h3 className="service-title">{service.title}</h3>
                 <ul className="service-list">
                   {service.items.map((item, itemIndex) => (
@@ -111,4 +109,4 @@ export default function Services() {
       </div>
     </section>
   );
-} 
+}
