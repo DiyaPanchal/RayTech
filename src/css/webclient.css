@@ -283,10 +283,6 @@
   text-shadow: 0 1px 4px rgba(30,44,68,0.25);
 }
 
-.client-card .client-website:hover {
-  color: #ffd700 !important;
-}
-
 @media (max-width: 480px) {
   .web-client-section {
     padding: 28px 0;

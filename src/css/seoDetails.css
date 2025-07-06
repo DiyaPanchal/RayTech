@@ -112,7 +112,6 @@
 }
 
 .seo-pillars-list li:hover {
-  background: #f0f6ff;
   color: #2563EB;
 }
 
@@ -244,16 +243,6 @@
 
 .seo-roi-list li:last-child {
   margin-bottom: 0;
-}
-
-.seo-roi-list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.1rem;
-  color: #2563EB;
-  font-weight: bold;
 }
 
 .seo-roi-list li b {
@@ -618,12 +607,18 @@
 
 /* Extra small mobile devices (480px and below) */
 @media (max-width: 480px) {
-  .seo-pillar-item {
-    padding: 0.9rem 0.6rem;
+  .seo-pillars-list {
+    padding: 0.5rem 0.5rem;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .web-dev-service-item {
+    padding: 0.5rem;
   }
   
-  .seo-pillars-list {
-    padding: 0.7rem 0.8rem;
+  .seo-pillar-item {
+    padding: 0.9rem 0.6rem;
   }
   
   .seo-pillars-list li {

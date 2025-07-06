@@ -129,7 +129,7 @@ export default function WebClient() {
     <section id="web-client" className="web-client-section">
       <div className="custom-container">
         <div className="section-heading-wrapper">
-          <h2 className="section-title">Client Work & Portfolio Highlights</h2>
+          <h2 className="section-title">Client Work & Portfolio</h2>
           <p className="byline">
             We take pride in having delivered robust solutions for a variety of
             industries:

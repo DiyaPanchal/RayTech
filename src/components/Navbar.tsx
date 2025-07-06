@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   // Only show Home link on service-related pages
-  const servicePaths = ["/web", "/graphic", "/seo", "/digital", "/erp"];
+  const servicePaths = ["/web", "/graphic", "/seo", "/digital", "/erp", "/privacy", "/terms"];
   const onlyHome = servicePaths.includes(location.pathname);
 
   return (

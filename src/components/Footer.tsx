@@ -1,8 +1,11 @@
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import logoWithTagline from "/logo-with-tagline.png";
 import "../css/footer.css";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Footer() {
+   const navigate = useNavigate();
   return (
     <footer className="footer">
       <div className="custom-container">
@@ -75,9 +78,9 @@ export default function Footer() {
           <div className="footer-bottom-content">
             <p>Ray Tech Pvt. Ltd. © 2025 — All Rights Reserved.</p>
             <div className="footer-bottom-links"> 
-              <a href="https://www.termsfeed.com/live/50c63dd5-cb16-4d14-b27b-2b6cc76b9302" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+              <button onClick={() => navigate('/privacy')} className="footer-link-btn">Privacy Policy</button>
               <span className="separator">|</span>
-              <a href="https://www.termsfeed.com/live/40830219-3be1-4c0b-a737-faf17050e02b" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+              <button onClick={() => navigate('/terms')} className="footer-link-btn">Terms & Conditions</button>
               {/* <span className="separator">|</span>
               <a href="/sitemap">Sitemap</a> */}
             </div>

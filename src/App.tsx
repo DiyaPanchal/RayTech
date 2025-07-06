@@ -6,6 +6,8 @@ import GraphicDesignPage from "./pages/GraphicDesign";
 import SeoPage from "./pages/Seo";
 import DigitalMarketingPage from "./pages/DigitalMarketing";
 import ErpSolutionsPage from "./pages/ErpSolutions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "../ScrollToTop";
@@ -21,6 +23,8 @@ function App() {
         <Route path="/seo" element={<SeoPage />} />
         <Route path="/digital" element={<DigitalMarketingPage />} />
         <Route path="/erp" element={<ErpSolutionsPage />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsConditions />} />
       </Routes>
       <ToastContainer
         position="top-right"

@@ -185,87 +185,10 @@
   font-weight: 500;
   margin: 0;
 }
-
-/* Core Services Section */
-.core-services-section {
-  padding: 4rem 0;
-  background-color: #F8FAFF;
-}
-
-.services-showcase {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-
-.service-item {
-  position: relative;
-  padding: 1.5rem;
-  background: #ffffff;
-  border-radius: 1rem;
-  overflow: hidden;
-  transition: all 0.4s ease;
-}
-
-.service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.1);
-}
-
-.service-content {
-  position: relative;
-  z-index: 1;
-}
-
-.service-content h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1A1A1A;
-  margin-bottom: 0.5rem;
-  transition: all 0.4s ease;
-}
-
-.service-content p {
-  font-size: 0.9rem;
-  color: #4B5563;
-  margin: 0;
-  transition: all 0.4s ease;
-}
-
-.service-decoration {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, #2563EB11 0%, #1D4ED811 100%);
-  border-radius: 0 0 0 100%;
-  transition: all 0.4s ease;
-}
-
-.service-item:hover .service-decoration {
-  width: 150px;
-  height: 150px;
-  background: linear-gradient(135deg, #2563EB22 0%, #1D4ED822 100%);
-}
-
-.service-item:hover .service-content h4 {
-  color: #2563EB;
-}
-
-.service-item:hover .service-content p {
-  color: #1F2937;
-}
-
 /* ===== RESPONSIVE DESIGN - PROPERLY ORGANIZED ===== */
 
 /* Large Desktop (1200px and below) */
 @media (max-width: 1200px) {
-  .services-showcase {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-  }
   
   .tools-grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -279,8 +202,7 @@
     padding-bottom: 2rem !important;
   }
   
-  .design-tools-section,
-  .core-services-section {
+  .design-tools-section {
     padding: 2.5rem 0;
   }
   
@@ -295,12 +217,7 @@
   .tools-showcase {
     margin-top: 1.5rem;
   }
-  
-  .services-showcase {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    padding: 1.5rem 0;
-  }
+
   
   .tools-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -312,9 +229,9 @@
     margin-bottom: 1rem;
   }
   
-  .tool-item,
-  .service-item {
+  .tool-item {
     padding: 1rem;
+    min-height: 100px;
   }
   
   .tool-logo {
@@ -380,8 +297,7 @@
     padding-bottom: 1rem !important;
   }
   
-  .design-tools-section,
-  .core-services-section {
+  .design-tools-section {
     padding: 1.5rem 0;
   }
   
@@ -402,6 +318,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
     padding: 1rem 0;
+    align-items: stretch;
   }
   
   .tools-grid {
@@ -414,9 +331,9 @@
     margin-bottom: 0.75rem;
   }
   
-  .tool-item,
-  .service-item {
+  .tool-item {
     padding: 0.75rem;
+    min-height: 90px;
   }
   
   .tool-logo {
@@ -425,24 +342,6 @@
   
   .tool-name {
     font-size: 0.8rem;
-  }
-  
-  .service-content h4 {
-    font-size: 1rem;
-  }
-  
-  .service-content p {
-    font-size: 0.85rem;
-  }
-  
-  .service-decoration {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .service-item:hover .service-decoration {
-    width: 120px;
-    height: 120px;
   }
   
   .lottie-animation {
@@ -468,8 +367,7 @@
   }
   
   .graphic-details-section,
-  .design-tools-section,
-  .core-services-section {
+  .design-tools-section {
     overflow-x: hidden;
   }
   
@@ -518,15 +416,9 @@
 
 /* Mobile (576px and below) */
 @media (max-width: 576px) {
-  .services-showcase {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    padding: 0.75rem 0;
-  }
-  
-  .tool-item,
-  .service-item {
+  .tool-item{
     padding: 0.5rem;
+    min-height: 80px;
   }
   
   .tool-logo {
@@ -535,14 +427,6 @@
   
   .tool-name {
     font-size: 0.75rem;
-  }
-  
-  .service-content h4 {
-    font-size: 0.95rem;
-  }
-  
-  .service-content p {
-    font-size: 0.8rem;
   }
   
   .lottie-animation {

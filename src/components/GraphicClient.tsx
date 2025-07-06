@@ -73,6 +73,10 @@ export default function GraphicClient() {
       <div className="custom-container">
         <div className="section-heading-wrapper">
           <h2 className="section-title">Client Work & Portfolio</h2>
+           <p className="byline">
+            We take pride in having delivered robust solutions for a variety of
+            industries:
+          </p>
         </div>
         <div className="swiper-container-wrapper">
           <Swiper
@@ -86,7 +90,6 @@ export default function GraphicClient() {
             pagination={{ clickable: true }}
             modules={[Pagination, Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            loop={true}
             onSwiper={(swiper) => { swiperRef.current = swiper; }}
             className="web-client-carousel"
           >

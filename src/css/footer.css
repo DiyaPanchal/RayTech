@@ -249,15 +249,21 @@
   flex-wrap: wrap;
 }
 
-.footer-bottom-links a {
+.footer-bottom-links a,
+.footer-link-btn {
   color: #a1a1aa;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
-.footer-bottom-links a::after {
+.footer-bottom-links a::after,
+.footer-link-btn::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -268,11 +274,13 @@
   transition: width 0.3s ease;
 }
 
-.footer-bottom-links a:hover {
+.footer-bottom-links a:hover,
+.footer-link-btn:hover {
   color: #2563eb;
 }
 
-.footer-bottom-links a:hover::after {
+.footer-bottom-links a:hover::after,
+.footer-link-btn:hover::after {
   width: 100%;
 }
 

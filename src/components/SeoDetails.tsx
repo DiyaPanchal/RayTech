@@ -1,7 +1,7 @@
 import '../css/seoDetails.css';
 import '../css/servicecommon.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import { FaChartLine, FaBullseye, FaRocket, FaMapMarkerAlt, FaShoppingBag, FaTooth, FaGraduationCap, FaBuilding, FaHotel, FaAppleAlt, FaCogs, FaTag, FaLink } from 'react-icons/fa';
+import { FaChartLine, FaBullseye, FaRocket, FaMapMarkerAlt, FaShoppingBag, FaTooth, FaGraduationCap, FaBuilding, FaHotel, FaAppleAlt, FaCogs, FaTag, FaLink, FaArrowRight } from 'react-icons/fa';
 import KeyBenefits from './KeyBenefits';
 
 const SeoDetails = () => {
@@ -38,7 +38,7 @@ const SeoDetails = () => {
   const seoPillars = [
     {
       title: 'Technical SEO',
-      icon: <FaCogs style={{ color: '#2563EB', fontSize: '1.5rem', flexShrink: 0 }} />, 
+      icon: <FaCogs style={{ color: '#2563EB', flexShrink: 0 }} />, 
       items: [
         'Full website audit',
         'Page speed optimization',
@@ -50,7 +50,7 @@ const SeoDetails = () => {
     },
     {
       title: 'On-Page SEO',
-      icon: <FaTag style={{ color: '#2563EB', fontSize: '1.5rem', flexShrink: 0 }} />, 
+      icon: <FaTag style={{ color: '#2563EB', flexShrink: 0 }} />, 
       items: [
         'Keyword research & targeting',
         'Meta tags (title & descriptions)',
@@ -61,7 +61,7 @@ const SeoDetails = () => {
     },
     {
       title: 'Off-Page SEO',
-      icon: <FaLink style={{ color: '#2563EB', fontSize: '1.5rem', flexShrink: 0 }} />, 
+      icon: <FaLink style={{ color: '#2563EB', flexShrink: 0 }} />, 
       items: [
         'High-quality backlink building',
         'Guest posting and link outreach',
@@ -71,7 +71,7 @@ const SeoDetails = () => {
     },
     {
       title: 'Local SEO',
-      icon: <FaMapMarkerAlt style={{ color: '#2563EB', fontSize: '1.5rem', flexShrink: 0 }} />, 
+      icon: <FaMapMarkerAlt style={{ color: '#2563EB', flexShrink: 0 }} />, 
       items: [
         'Google My Business optimization',
         'Local keyword targeting',
@@ -204,7 +204,7 @@ const SeoDetails = () => {
               <div key={idx} className="web-dev-service-item seo-pillar-card">
                 <div className="pillar-title-row">
                   {pillar.icon}
-                  <h3 className="web-dev-service-text" style={{fontWeight:700, fontSize:'1.15rem', margin:0}}>{pillar.title}</h3>
+                  <h3 className="web-dev-service-text" style={{fontWeight:700, margin:0}}>{pillar.title}</h3>
                 </div>
                 <ul className="seo-pillars-list">
                   {pillar.items.map((item, i) => (
@@ -261,12 +261,12 @@ const SeoDetails = () => {
           <h2 className="seo-roi-title">Return on Investment (SEO ROI Example)</h2>
           <p className="seo-roi-byline">Let's assume a <b>Dental Clinic</b> website in a competitive metro city:</p>
           <ul className="seo-roi-list">
-            <li><b>Initial Monthly Website Visitors:</b> 200</li>
-            <li><b>Post SEO Monthly Visitors:</b> 1,200 (+500%)</li>
-            <li><b>Conversion Rate:</b> 5%</li>
-            <li><b>New Patient Appointments:</b> 60/month</li>
-            <li><b>Avg. Revenue per Patient:</b> ₹2,000</li>
-            <li><b>New Revenue Generated:</b> ₹1,20,000/month</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>Initial Monthly Website Visitors:</b> 200</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>Post SEO Monthly Visitors:</b> 1,200 (+500%)</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>Conversion Rate:</b> 5%</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>New Patient Appointments:</b> 60/month</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>Avg. Revenue per Patient:</b> ₹2,000</li>
+            <li><FaArrowRight style={{marginRight: '0.5em', color: '#2563EB', minWidth: '1em'}} /><b>New Revenue Generated:</b> ₹1,20,000/month</li>
           </ul>
           <div className="seo-roi-highlight">
             Even with our ₹50,000 Diamond SEO Package, <b>your break-even can be achieved in just 2–3 weeks.</b> Post-SEO, the growth becomes exponential – passive, profitable, and compounding.

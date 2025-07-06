@@ -167,7 +167,6 @@
   width: 60px;
 }
 
-/* --- WEB DEVELOPMENT SERVICES SECTION --- */
 .web-dev-services-section {
   position: relative;
   padding: 4rem 0;
@@ -215,7 +214,7 @@
 
 .web-dev-service-text {
   color: #1A1A1A;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin: 0;
   padding-left: 1rem;
   line-height: 1.5;
@@ -232,14 +231,6 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding: 2rem 0;
-}
-
-/* Center last two items when they wrap to next row (for 6 items total) */
-.services-showcase > .service-item:nth-last-child(-n+2):nth-child(4n-1),
-.services-showcase > .service-item:nth-last-child(-n+2):nth-child(4n) {
-  grid-column: span 2;
-  justify-self: center;
-  max-width: calc(50% - 0.75rem);
 }
 
 .service-item {
@@ -326,6 +317,7 @@
   
   .web-dev-services-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 
@@ -391,6 +383,7 @@
   
   .web-dev-services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   
   .web-dev-service-item {
@@ -437,6 +430,7 @@
   
   .web-dev-services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   
   .web-dev-service-item {
