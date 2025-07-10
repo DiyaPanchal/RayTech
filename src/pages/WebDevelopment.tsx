@@ -26,7 +26,7 @@ const webDevPackages: PricingPackage[] = [
     price: '25,999',
     usdPrice: '$ 500',
     features: [
-      'All Features of Basic +',
+      'All Features of Basic',
       'Up to 10 Pages',
       'Enhanced UI/UX Design',
       'Custom Form Features',
@@ -45,7 +45,7 @@ const webDevPackages: PricingPackage[] = [
     price: '45,999',
     usdPrice: '$ 750',
     features: [
-      'All Features of Standard +',
+      'All Features of Standard',
       'Unlimited Pages',
       'Advanced UI/UX Design',
       'Amazing Animations & Effects',

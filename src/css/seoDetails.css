@@ -731,3 +731,10 @@
     gap: 1.25rem;
   }
 } 
+
+/* ===== CORE SERVICES RESPONSIVE DESIGN - SEODETAILS COMPONENT ===== */
+@media (max-width: 576px) {
+  .seo-section .web-dev-services-grid {
+    grid-template-columns: 1fr !important;
+  }
+} 

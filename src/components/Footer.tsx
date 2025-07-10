@@ -48,8 +48,10 @@ export default function Footer() {
               <li>
                 <FaEnvelope className="footer-contact-icon" />
                 <div>
-                  <p>info@raytech.com</p>
-                  <p>support@raytech.com</p>
+                  {/* <p>info@raytech.com</p>
+                  <p>support@raytech.com</p> */}
+                  <p>director.raytech@gmail.com</p>
+                  
                 </div>
               </li>
             </ul>

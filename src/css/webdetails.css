@@ -274,6 +274,43 @@
   }
 }
 
+/* ===== WEB DEV SERVICE TEXT RESPONSIVE DESIGN - WEBDETAILS COMPONENT ===== */
+
+/* Desktop/Tablet (991px and below) */
+@media (max-width: 991px) {
+  .web-dev-section .web-dev-service-text {
+    font-size: 1.15rem;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  .web-dev-section .web-dev-service-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+  .web-dev-section .web-dev-service-text {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .web-dev-section .web-dev-service-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Mobile (375px and below) */
+@media (max-width: 375px) {
+  .web-dev-section .web-dev-service-text {
+    font-size: 0.85rem;
+  }
+}
+
 /* ===== PERFORMANCE OPTIMIZATIONS - TECH STACK ONLY ===== */
 
 /* Animation Controls for Performance - Mobile */
@@ -374,5 +411,21 @@
   
   .tech-item:hover {
     transform: none !important;
+  }
+} 
+
+@media (max-width: 576px) {
+  .web-dev-section .web-dev-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .web-dev-section .web-dev-service-item {
+    min-height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 } 

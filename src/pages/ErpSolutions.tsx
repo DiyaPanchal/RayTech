@@ -19,7 +19,7 @@ const erpMonthlyPackages: PricingPackage[] = [
     price: '3,800',
     usdPrice: '/Month',
     features: [
-      'Intermediate Modules + CRM',
+      'Intermediate Modules and CRM',
       'Up to 15 Users',
       '3–4 Modules',
     ],
@@ -31,7 +31,7 @@ const erpMonthlyPackages: PricingPackage[] = [
     price: '6,000',
     usdPrice: '/Month',
     features: [
-      'Full ERP Suite + Mobile App',
+      'Full ERP Suite and Mobile App',
       'Unlimited Users',
       'All Modules',
     ],
@@ -53,7 +53,7 @@ const erpLifetimePackages: PricingPackage[] = [
     price: '2.75 Lakhs',
     usdPrice: 'One Time',
     features: [
-      '2 Modules (HRM + Sales)',
+      '2 Modules (HRM and Sales)',
       'Best for scaling businesses',
     ],
     featured: true,
@@ -64,7 +64,7 @@ const erpLifetimePackages: PricingPackage[] = [
     price: '4.5 Lakhs',
     usdPrice: 'One Time',
     features: [
-      'All Modules (HRM + Sales + Inventory)',
+      'All Modules (HRM, Sales and Inventory)',
       'Enterprise ready',
     ],
   },
