@@ -15,14 +15,18 @@ export default function Hero() {
               Partner with us to build innovative digital solutions.
             </p>
             <div className="hero-buttons">
-              <button className="btn btn-primary">Get Started</button>
-              <button className="btn btn-secondary">Let's Talk</button>
+              <a href="#contact" className="btn btn-primary">
+                Get Started
+              </a>
+              <a href="#contact" className="btn btn-secondary">
+                Let's Talk
+              </a>
             </div>
           </div>
           <div className="hero-image">
-            <img 
-              src="/hero.png" 
-              alt="Development team working together in modern office" 
+            <img
+              src="/hero.png"
+              alt="Development team working together in modern office"
             />
           </div>
         </div>

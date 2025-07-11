@@ -64,7 +64,7 @@ const clients = [
     category: "PLATINUM",
     industry: "Tech Education",
     website: "http://www.futurecoreinnovations.tech",
-    display: "futurecoreinnovations.tech",
+    // display: "futurecoreinnovations.tech",
     icon: <FaGraduationCap size={36} color="#fff" />,
     desc: "Innovative tech education platforms.",
     bgImage:
@@ -74,7 +74,7 @@ const clients = [
     category: "PLATINUM",
     industry: "QR Tech Solutions",
     website: "http://www.smarqrtech.com",
-    display: "smarqrtech.com",
+    // display: "smarqrtech.com",
     icon: <FaQrcode size={36} color="#fff" />,
     desc: "Smart QR solutions for modern businesses.",
     bgImage:
@@ -147,7 +147,9 @@ export default function WebClient() {
             pagination={{ clickable: true }}
             modules={[Pagination, Autoplay]}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            onSwiper={(swiper) => { swiperRef.current = swiper; }}
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
+            }}
             className="web-client-carousel"
           >
             {clients.map((client, idx) => (

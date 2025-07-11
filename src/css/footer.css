@@ -47,7 +47,7 @@
 
 .company-description {
   color: #a1a1aa;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
@@ -99,7 +99,7 @@
   color: #a1a1aa;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   position: relative;
   display: inline-block;
   padding-left: 0;
@@ -139,10 +139,16 @@
 
 .footer-contact-icon {
   color: #2563eb;
-  font-size: 1.25rem;
-  margin-right: 1rem;
-  margin-top: 0.25rem;
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+  /* margin-top: 0.25rem; */
   transition: all 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .footer-contact-icon {
+    font-size: 0.9rem; /* Adjust this value as needed */
+  }
 }
 
 .contact-list li:hover .footer-contact-icon {
@@ -151,7 +157,7 @@
 
 .contact-list li div p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 
