@@ -1,7 +1,7 @@
 import { HiMail, HiPhone, HiLocationMarker } from "react-icons/hi";
 import { useState } from "react";
-import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import "../css/contact.css";
 
 export default function Contact() {
@@ -9,16 +9,18 @@ export default function Contact() {
     name: "",
     email: "",
     number: "",
-    message: ""
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { id, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [id]: value
+      [id]: value,
     }));
   };
 
@@ -28,21 +30,20 @@ export default function Contact() {
 
     try {
       const result = await emailjs.send(
-        "service_2wbl68l",
-        "template_1nhaprd",
+        "service_kx7zsai",
+        "template_5xkg3xi",
         {
           from_name: formData.name,
           from_email: formData.email,
           from_number: formData.number,
           message: formData.message,
-          to_email: "director.raytech@gmail.com",
+          to_email: "vivek.alpinewellness@gmail.com",
         },
-        "65J5NGce2GRAcC56a"
+        "p_HC0iuK_ardXhkuE"
       );
 
       if (result.status === 200) {
-        toast.success("Your message has been sent successfully!", {
-        });
+        toast.success("Your message has been sent successfully!", {});
         setFormData({ name: "", email: "", number: "", message: "" });
       }
     } catch (error) {
@@ -63,7 +64,7 @@ export default function Contact() {
     <section id="contact" className="contact-section">
       <div className="custom-container">
         <h2 className="section-title mb-5">Contact Us</h2>
-        
+
         <div className="row g-4 justify-content-between">
           <div className="col-lg-6">
             <form onSubmit={handleSubmit} className="contact-form">
@@ -79,7 +80,7 @@ export default function Contact() {
                   onChange={handleChange}
                 />
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input
@@ -107,7 +108,7 @@ export default function Contact() {
                   maxLength={15}
                 />
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="message">Message</label>
                 <textarea
@@ -120,13 +121,20 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
-                <div style={{ fontSize: '0.95rem', color: '#888', textAlign: 'right', marginTop: '0.25rem' }}>
+                <div
+                  style={{
+                    fontSize: "0.95rem",
+                    color: "#888",
+                    textAlign: "right",
+                    marginTop: "0.25rem",
+                  }}
+                >
                   {formData.message.length}/250
                 </div>
               </div>
-              
-              <button 
-                type="submit" 
+
+              <button
+                type="submit"
                 className="btn btn-primary"
                 disabled={isSubmitting}
               >
@@ -134,7 +142,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          
+
           <div className="col-lg-5">
             <div className="contact-info">
               <div className="contact-item">
@@ -146,7 +154,7 @@ export default function Contact() {
                   <p>director.raytech@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="contact-item">
                 <div className="icon-wrapper">
                   <HiPhone className="contact-icon" />
@@ -156,7 +164,7 @@ export default function Contact() {
                   <p>+91 91576 71794</p>
                 </div>
               </div>
-              
+
               <div className="contact-item">
                 <div className="icon-wrapper">
                   <HiLocationMarker className="contact-icon" />
@@ -172,7 +180,7 @@ export default function Contact() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.70717963463!2d72.43965503418377!3d23.020497766767125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710097547943!5m2!1sen!2sin"
                   width="100%"
                   height="250"
-                  style={{ border: 0, borderRadius: '12px' }}
+                  style={{ border: 0, borderRadius: "12px" }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -184,4 +192,4 @@ export default function Contact() {
       </div>
     </section>
   );
-} 
+}
